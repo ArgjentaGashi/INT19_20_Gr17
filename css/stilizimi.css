@@ -1,0 +1,250 @@
+body
+{
+	background-color: white;
+	font-family: 'David Libre';
+	font-size: 1.3em;
+	color: #696969;
+	border-top: 5px solid #911203;
+	width: 100%;
+}
+
+header h1
+{
+	padding-top: 30px;
+	font-family: Alegreya Sans SC;
+	font-size: 2em;
+	font-weight: lighter;
+	padding-left: 22px;
+}
+
+header h3
+{
+	font-size: 0.8em;
+	padding-bottom: 40px;
+	padding-left: 25px;
+}
+
+#smedialinks
+{
+	position: absolute;
+	top: 60px;
+	right: 11em;
+	float: right;
+}
+
+#smedialinks ul li
+{
+	list-style: none;
+	display: inline;
+}
+
+#smedialinks ul li a:hover
+{
+	background-color: #B42B32
+}
+#search
+{
+	position: absolute;
+	top: 60px;
+	right: 0.5em;
+	float: right;
+}
+
+#search form input
+{	
+	border-radius: 30px;
+	border-color: none;
+	background-color: #DADADA;
+	/*background: url("../images/searchbutton.png") no-repeat;
+	background-position: 10.5em 0.2em;*/ 
+}
+
+.navbar
+{	
+	overflow: hidden;
+	background-color: #F0F0F0;
+}
+
+.navbar a{
+	float: left;
+	font-size: 18px;
+	color: #878787;
+	text-align: left;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.dropdown{
+	float: left;
+	overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 18px;  
+  border: none;
+  outline: none;
+  color:#878787;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #B42B32;
+}
+
+.dropcnt {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropcnt a {
+  float: none;
+  color: #878787;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropcnt a:hover {
+  background-color:#B42B32;
+}
+
+.dropdown:hover .dropcnt {
+  display: block;
+}
+
+
+
+/*----------stilizimi i main-------*/
+
+#anim
+{
+	padding: 70px 200px 70px 200px;
+}
+#fig1
+{
+	float: left;
+	padding-right: 30px;
+}
+
+main h2
+{
+	font-family: Alegreya Sans SC;
+	font-size: 2.5em;
+	font-weight: lighter;
+}
+
+#vija_poshte, #vija_larte
+{	
+	border-color: white;
+	background: radial-gradient(circle, #696969, white);
+	height: 1px;
+}
+
+#quote
+{
+	margin: 30px;
+	padding-left: 70px;
+	padding-right: 70px;
+	text-align: center;
+	font-style: italic;
+}
+
+#galeria
+{	
+	margin: 30px;
+	padding-left: 30px;
+	padding-bottom: 30px;
+	column-count: 3;
+	column-gap: 20px;
+	column-rule-style: none;
+}
+
+#galeria figcaption
+{
+	padding-top: 10px;
+	font-family: "David Libre";
+}
+
+#galeria figcaption a
+{	
+	text-decoration: none;
+	font-size: 18px;
+	color: #911203;
+	padding-left: 65px;
+	padding-right: 67px;
+	
+}
+
+#galeria figcaption a:hover
+{	
+	background-color: lightgrey;
+	
+}
+
+.pjesa2
+{
+	column-count: 2;
+	margin: 15px;
+	padding-bottom: 30px;
+}
+
+.wpsau
+{
+	padding-right: 30px;
+}
+.wpsau h2, .meetTeam h2
+{
+	font-size: 1.5em;
+}
+
+.src1 img
+{
+	float: left;
+	padding-right: 10px;
+}
+
+/*stilizimi i footerit*/
+
+.pjesaefundit
+{	
+	
+	column-count: 4;
+	background-color: #F0F0F0;
+}
+
+.pjesaefundit a
+{
+	text-decoration: none;
+	font-size: 18px;
+	color: #911203;
+}
+
+/*#a, #b, #d
+{
+	padding-top: 10px;
+}
+#c{
+	padding-top: 60px;
+}
+#a{
+	padding-left: 1em;
+}
+#d
+{
+	padding-top: 20px;
+}
+*/
+#copyright
+{	
+	column-span: all;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background-color: #D4D4D4;
+}
