@@ -1,40 +1,40 @@
- <div class="app">        
-        <h4>APLIKO PER PUNE</h4>
-        <br/><br/><br/><br/><br/>
+<div class="apply">
+        <h4>APPLY FOR JOB</h4>
+        <br /><br /><br /><br /><br />
         <form class="aplikimi">
-                    <label class="e">Emri:</label>
-                    <input class="inputi" type="text" name="emri" placeholder="Shëno emrin"><br/><br>
+            <label class="tedhenat">Name:</label>
+            <input class="inputi" type="text" name="namee" placeholder="Write your name"><br /><br>
 
-                    <label class="e">Mbiemri:</label>
-                    <input class="inputi" type="text" name="mbiemri" placeholder="Shëno mbiemrin"><br/><br/>
+            <label class="tedhenat">Last name:</label>
+            <input class="inputi" type="text" name="lastname" placeholder="Write your last name"><br /><br />
 
-                    <label class="e" >Email:</label>
-                    <input class="inputi" type="text" name="email" placeholder="Shëno email-in"><br/><br/>
+            <label class="tedhenat">Email:</label>
+            <input class="inputi" type="text" name="email" placeholder="Write your email"><br /><br />
 
-                    <label class="e">Telefon:</label>
-                    <input class="inputi" type="tel" name="telefon" value="+"><br/><br/>
+            <label class="tedhenat">Telephone:</label>
+            <input class="inputi" type="tel" name="telephonee" value="+"><br /><br />
 
-                    <label class="e">Gjinia:</label>
-                    <select class="inputi" name="gjinia">
-                            <option value="Femër">Femër</option>
-                            <option value="Mashkull">Mashkull</option>
-                        </select><br/><br/>
+            <label class="tedhenat">Gender:</label>
+            <select class="inputi" name="gender" placeholder="Gender">
+                <option value="Femër">Female</option>
+                <option value="Mashkull">Male</option>
+            </select><br /><br />
 
-                    <label class="e" >Ditëlindja:</label>
-                    <input class="inputi" type="text" name="Ditëlindja" placeholder="Ditëlindja"><br/><br/>
+            <label class="tedhenat">Birthdate:</label>
+            <input class="inputi" type="date" name="Birthdate" placeholder="Birthdate"><br /><br />
 
-                    <label class="e" >Shteti:</label>
-                    <input  class="inputi" type="type" name="shteti" placeholder="Shteti"><br/><br/>
+            <label class="tedhenat">Country:</label>
+            <input class="inputi" type="type" name="country" placeholder="Country"><br /><br />
 
-                    <label class="e" >Qyteti:</label>
-                    <input class="inputi" type="text" name="qyteti" placeholder="Qyteti"><br/><br/>
+            <label class="tedhenat">City:</label>
+            <input class="inputi" type="text" name="city" placeholder="City"><br /><br />
 
-                    <label class="e" >Vendbanimi:</label>
-                    <input  class="inputi"type="text" name="vendbanimi" placeholder="Shëno vendbanimin"><br/><br/>
+            <label class="tedhenat">Street:</label>
+            <input class="inputi" type="text" name="street" placeholder="Write your street"><br /><br />
 
-                    <label class="e" >Ngarko CV:</label>
-                    <input class="inputi" type="file" alt="No file chosen"><br/><br/>
+            <label class="tedhenat">Upload CV:</label>
+            <input class="inputi" type="file" alt="No file chosen"><br /><br />
 
-                    <button class="butoni" type="button">APLIKO</button>
+            <button class="butoni" type="button">APLIKO</button>
         </form>
-        </div>
+    </div>
