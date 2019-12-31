@@ -1,3 +1,29 @@
+/* -------------------------------------------Dialog Box-------------------------------------------- */
+
+#dialogoverlay{
+	display: none;
+	opacity: .8;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: #FFF;
+	width: 100%;
+	z-index: 10;
+}
+#dialogbox{
+	display: none;
+	position: fixed;
+	background: #911203;
+	border-radius:7px; 
+	width:550px;
+	z-index: 10;
+}
+#dialogbox > div{ background:white; margin:8px; }
+#dialogbox > div > #dialogboxhead{ background: white; font-size:19px; padding:10px; color: #696969; }
+#dialogbox > div > #dialogboxbody{ background:white; padding:20px; color: #696969; }
+#dialogbox > div > #dialogboxfoot{ background: white; padding:10px; text-align:right; }
+
+/* -----------------------------------Faqja Kryesore--------------------------------------------------- */
 body
 {
 	background-color: white;
@@ -14,7 +40,7 @@ header h1
 	font-family: Alegreya Sans SC;
 	font-size: 2em;
 	font-weight: lighter;
-	padding-left: 22px;
+	padding-left: 22px;	
 }
 
 header h3
@@ -40,7 +66,7 @@ header h3
 
 #smedialinks ul li a:hover
 {
-	background-color: #B42B32
+	background-color: #B42B32;
 }
 #search
 {
@@ -59,16 +85,18 @@ header h3
 	background-position: 10.5em 0.2em;*/ 
 }
 
+/* ---------------Stilizimi i Navigation Bar--------------------------------------------- */
+
 .navbar
 {	
 	overflow: hidden;
-	background-color: #F0F0F0;
+	background-color: rgb(116, 35, 35);
 }
 
 .navbar a{
 	float: left;
 	font-size: 18px;
-	color: #878787;
+	color: white;
 	text-align: left;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -82,7 +110,7 @@ header h3
   font-size: 18px;  
   border: none;
   outline: none;
-  color:#878787;
+  color:white;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -96,7 +124,7 @@ header h3
 .dropcnt {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: rgb(173, 170, 170);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -104,7 +132,7 @@ header h3
 
 .dropcnt a {
   float: none;
-  color: #878787;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -123,28 +151,46 @@ header h3
 
 /*----------stilizimi i main-------*/
 
-#anim
+.carouselslideshow
 {
-	padding: 70px 200px 70px 200px;
+	display: flex;
+	align-items: center;
+	margin: 5%;
 }
-#fig1
+
+.prev, .next{
+	width: 15%;
+	font-size: 2.5em;
+	transition: font-size 1s;
+}
+
+.prev:hover, .next:hover{
+	font-size: 3.5em;
+}
+
+.artikujt
+{
+	width: 70%;
+}
+
+#mainfig
 {
 	float: left;
-	padding-right: 30px;
+	padding-right: 1em;
 }
 
 main h2
 {
 	font-family: Alegreya Sans SC;
-	font-size: 2.5em;
+	font-size: 1.5em;
 	font-weight: lighter;
 }
 
 #vija_poshte, #vija_larte
 {	
 	border-color: white;
-	background: radial-gradient(circle, #696969, white);
-	height: 1px;
+	background: radial-gradient(circle, rgb(126, 50, 50), white);
+	height: 2px;
 }
 
 #quote
@@ -172,14 +218,11 @@ main h2
 	font-family: "David Libre";
 }
 
-#galeria figcaption a
+a
 {	
 	text-decoration: none;
 	font-size: 18px;
-	color: #911203;
-	padding-left: 65px;
-	padding-right: 67px;
-	
+	color: #911203;	
 }
 
 #galeria figcaption a:hover
@@ -190,15 +233,22 @@ main h2
 
 .pjesa2
 {
-	column-count: 2;
-	margin: 15px;
-	padding-bottom: 30px;
+	margin: 5%;
+	display: flex;
+	
 }
 
 .wpsau
 {
-	padding-right: 30px;
+	width: 40%;
 }
+
+.meetTeam
+{
+	width: 40%;
+	padding-left: 10%;
+}
+
 .wpsau h2, .meetTeam h2
 {
 	font-size: 1.5em;
@@ -210,44 +260,53 @@ main h2
 	padding-right: 10px;
 }
 
-/*stilizimi i footerit*/
+/*-----------------------------------stilizimi i footerit-------------------------------------------------*/
 
-.pjesaefundit
-{	
+.foot
+{
+	background-color: rgb(228, 226, 226);
+	font-size: 0.8em;
+}
+
+h5{
+	font-size: 1em;
+}
+
+.A 
+{
+	display: flex;
 	
-	column-count: 4;
-	background-color: #F0F0F0;
 }
 
-.pjesaefundit a
-{
-	text-decoration: none;
-	font-size: 18px;
-	color: #911203;
-}
-
-/*#a, #b, #d
-{
-	padding-top: 10px;
-}
-#c{
-	padding-top: 60px;
-}
 #a{
+	width: 25%;
 	padding-left: 1em;
 }
-#d
+
+#au
 {
-	padding-top: 20px;
+	width: 200px;
 }
-*/
+
+#b, #c, #d{
+	width: 25%;
+}
+
+.f, #submit, #btn1, #btn2{
+	border-radius: 5px;
+	background-color: F1F1F1;
+	font-family: Alegreya Sans SC;
+}
+
 #copyright
 {	
-	column-span: all;
-	padding-top: 1em;
+	padding-top: 1em ;
 	padding-bottom: 1em;
+	padding-left: 1em;
 	background-color: #D4D4D4;
 }
+
+
 /* ------------------------------------INTERIER--------------------------------------------------------
 ------------------------------------DHOMA E PUNES--------------------------------------------------- */
 .dhp_produkt1
