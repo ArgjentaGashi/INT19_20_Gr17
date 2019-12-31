@@ -248,3 +248,175 @@ main h2
 	padding-bottom: 1em;
 	background-color: #D4D4D4;
 }
+/* ------------------------------------INTERIER--------------------------------------------------------
+------------------------------------DHOMA E PUNES--------------------------------------------------- */
+.dhp_produkt1
+{	margin: 3%;
+	padding-left:25%;
+}
+
+.dhp_produkt2
+{	margin: 3%;
+	padding-left:25%;
+}
+
+.dhp_produkt3
+{	margin: 3%;
+	padding-left:25%;
+}
+
+.dhp_produkt4
+{	margin: 3%;
+	padding-left:25%;
+}
+
+.dhp_produkt5
+{	margin: 3%;
+	padding-left:25%;
+}
+
+.dhp_produkt6
+{	margin: 3%;
+	padding-left:25%;
+}
+
+/* ------------------------------------INTERIER--------------------------------------------------------
+------------------------------------DHOMA E DITES---------------------------------------------------
+-----------------------------DHOMA E DITES PRODUKTI I PARE------------------------------------------- */
+.produktet_dh_dites
+{
+	margin: 5%;
+	
+}
+.dhd_produkti1
+{	margin: 3%;
+	padding-left:25%;
+}
+
+.dhd_produkti2
+{	margin: 3%;
+	padding-left:25%;
+}
+
+.dhd_produkti3
+{	margin: 3%;
+	padding-left:25%;
+}
+
+.dhd_produkti4
+{	margin: 3%;
+	padding-left:25%;
+}
+
+.dhd_produkti5
+{	margin: 3%;
+	padding-left:25%;
+}
+
+.dhd_produkti6
+{	margin: 3%;
+	padding-left:25%;
+}
+
+/* ------------------------------------INTERIER--------------------------------------------------------
+----------------------------------------KUZHINA---------------------------------------------------
+-----------------------------DHOMA E DITES PRODUKTI I PARE------------------------------------------- */
+.produktet_kuzhines{
+	margin:5%;
+}
+.kuzhina_produkti1{
+	margin: 3%;
+	padding-left:25%;
+}
+.kuzhina_produkti2{
+	margin: 3%;
+	padding-left:25%;
+}
+.kuzhina_produkti3{
+	margin: 3%;
+	padding-left:25%;
+}
+.kuzhina_produkti4{
+	margin: 3%;
+	padding-left:25%;
+}
+.kuzhina_produkti5{
+	margin: 3%;
+	padding-left:25%;
+}
+.kuzhina_produkti6{
+	margin: 3%;
+	padding-left:25%;
+}
+.hoveer:hover{
+	transform: scale(1.1);
+}
+/* ------------------------------------INTERIER--------------------------------------------------------
+------------------------------------DHOMA E PUNES---------------------------------------------------
+-----------------------------DHOMA E PUNES PRODUKTI I PARE------------------------------------------- */
+.produktet_dh_gjumit
+{
+	margin: 5%;
+	
+}
+.dhgj_produkti1
+{	margin: 3%;
+	padding-left:25%;
+}
+
+
+.dhgj_produkti2
+{	margin: 3%;
+	padding-left:25%;
+}
+
+.dhgj_produkti3
+{	margin: 3%;
+	padding-left:25%;
+}
+
+
+.dhgj_produkti4
+{	margin: 3%;
+	padding-left:25%;
+}
+
+
+.dhgj_produkti5
+{	margin: 3%;
+	padding-left:25%;
+}
+
+
+.dhgj_produkti6
+{	margin: 3%;
+	padding-left:25%;
+}
+
+/* --------------------------------------------------------Produktet tek faqet e interierit---------------------------------------------------- */
+
+.hoveer{
+	margin: 3% 5%;
+	padding-left: 4%;
+	transition-duration: 500ms;
+	transition-property: transform;
+}
+.hoveer:hover{
+	transform: scale(1.1);
+}
+
+/*--------------------------------STILIZIMI I TABELAVE DHE ZOOM IN NE PRODUKTE TE DHOMAVE-----------------------------------------------*/
+.tabela{
+	border-collapse: collapse;
+	width:490px;
+}
+.pad{
+	padding:5px;
+}
+.zoomin{
+	transition-duration: 1000ms;
+	transition-property: transform;
+}
+.zoomin:hover{
+	transform:scale(1.5);
+}
