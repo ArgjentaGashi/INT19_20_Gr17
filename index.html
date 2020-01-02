@@ -7,22 +7,48 @@
 	<link href='https://fonts.googleapis.com/css?family=David Libre' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="lib/reset.css">
-	<link rel="stylesheet" href="C:\Users\TECHCOM\Documents\projekti_internet_grupi17\lib/stilizimi.css">
+	<link rel="stylesheet" href="lib/stilizimi.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="javascript/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#btn1").click(function () {
+				$("ol").append("<li><a href=\"interieri/dhoma_punes_produktet/dhp_produkti1.html\">Araceli</a></li>",
+					"<li><a href=\"interieri/dhoma_dites_produktet/dhd_produkti2.html\">Valebeck</a></li");
+			});
+
+			$("#btn2").click(function () {
+				$("ol").prepend("<li><a href=\"interieri/dhoma_gjumit_produktet/dhgj_produkti2.html\">Mattress</a></li>",
+					"<li><a href=\"interieri/kuzhina_produktet/produkti1.html\">Kitchen Reno</a></li");
+			});
+		});
+
+
+	</script>
 </head>
 
-<body>
-	<header>
+<body class="fadeBody">
 
+	<style>
+		.fadeBody {
+			display: none;
+		}
+	</style>
+
+	<div id="dialogoverlay"></div>
+
+	<header>
 		<h1>Your Home</h1>
 		<h3>Where dreams come true</h3>
 		<nav>
 			<div id="smedialinks">
 				<ul>
-					<li><a href="https://www.linkedin.com/"><img src="images/linkedin.png"></a></li>
-					<li><a href="https://www.twitter.com/"><img src="images/twitter.png"></a></li>
-					<li><a href="https://www.pinterest.com/"><img src="images/pinterest.png"></a></li>
-					<li><a href="https://plus.google.com/"><img src="images/googleplus.png"></a></li>
-					<li><a href="https://www.facebook.com/"><img src="images/facebook.png"></a></li>
+					<li><a href="https://www.linkedin.com/"><abbr title="Linkedin"><img src="images/linkedin.png" alt="Link."></abbr></a></li>
+                    <li><a href="https://www.twitter.com/"><abbr title="Twitter"><img src="images/twitter.png" alt="Tweet"></abbr></a></li>
+                    <li><a href="https://www.pinterest.com/"><abbr title="Pinterest"><img src="images/pinterest.png" alt="Pint"></abbr></a></li>
+                    <li><a href="https://plus.google.com/"><abbr title="+Google"><img src="images/googleplus.png" alt="+"></abbr></a></li>
+                    <li><a href="https://www.facebook.com/"><abbr title="Facebook"><img src="images/facebook.png" alt="Fb"></abbr></a></li>
 				</ul>
 			</div>
 
@@ -31,7 +57,6 @@
 					<input type="search" name="Search">
 				</form>
 			</div>
-
 
 			<div class="navbar">
 				<a href="index.html">Home</a>
@@ -52,19 +77,68 @@
 				<a href="rreth_nesh.html">About us</a>
 			</div>
 		</nav>
+
+		<div id="dialogbox">
+			<div>
+				<div id="dialogboxhead"></div>
+				<div id="dialogboxbody"></div>
+				<div id="dialogboxfoot"></div>
+			</div>
+		</div>
 	</header>
 
 
 	<main>
-		<section class="anim">
-			<img id="fig1" src="images/temp1.jpg" style="width: 390px; height: 216px">
-			<h2>Titulli i artikullit</h2>
-			hhhhhhhhhhhhhhhhhhhhh <br />
-			hhhhhhhhhhhhhhhhhhhhh <br />
-			hhhhhhhhhhhhhhhhhhhhh <br />
-			hhhhhhhhhhhhhhhhhhhhh <br />
-			hhhhhhhhhhhhhhhhhhhhh <br />
-			<a href="tips_and_tricks.html">Read more</a>
+		<section>
+			<div class="carouselslideshow">
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+				<div class="artikujt">
+
+					<div class="artikulli">
+						<img id="mainfig"  src="images/imgtat/id2.jpg" style="width: 390px; height: 216px">
+						<h2>How to decorate for Christmas</h2>
+						Wondering how to decorate for <br>
+						Christmas? We're here to help <br>
+						you deck the halls...<br>
+						<a href="https://www.tasteofhome.com/collection/how-to-decorate-for-christmas/">Read more</a>
+					</div>
+
+
+
+					<div class="artikulli">
+						<img id="mainfig" src="images/imgtat/id6.jpg" style="width: 390px; height: 216px">
+						<h2>Colorful interior design ideas</h2>
+						If you are not sure how to add <br>
+						pops of color to your space you <br>
+						came to the right place. <br>
+						<a href="https://www.amara.com/luxpad/colourful-interior-design-ideas/">Read more</a>
+					</div>
+
+
+					<div class="artikulli">
+						<img id="mainfig" src="images/imgtat/id5.jpg" style="width: 390px; height: 216px">
+						<h2>Best modern living room design</h2>
+						A living room needs to be <br>
+						welcoming for you and your <br>
+						guests. More people will be <br>
+						able to visualize it as...<br>
+						<a href="https://www.amara.com/luxpad/colourful-interior-design-ideas/">Read more</a>
+					</div>
+				</div>
+
+				<a class="next" onclick='plusSlides(1)'>&#10095;</a>
+
+			</div>
+			<br />
+
+			<div style='text-align: center;'>
+				<span class="dot" onclick='currentSlide(1)'></span>
+				<span class="dot" onclick='currentSlide(2)'></span>
+				<span class="dot" onclick='currentSlide(3)'></span>
+				<span class="dot" onclick='currentSlide(4)'></span>
+			</div>
 		</section>
 
 		<section class="pjesa2">
@@ -72,29 +146,79 @@
 			<div class="wpsau">
 				<h2 class="maintitle"> What People Say About Us</h2>
 				<p class="src"><img src="images\qmarks.png" /> Tommy Tanker - Customer</p>
-				<p>I am really happy with the quality of the products.
-					The new prices for Christmass Holidays are so worth it and I saved a lot of money by buying.
+				<p>I am really happy with the quality of the products. Not only are they durable, but they are
+					eco-friendly as well. They recycle everything and you can even send your old furniture there.
+					Also the new prices for Christmass Holidays are so worth it and I saved a lot of money by buying.
 					Talk about great deals! </p>
 
 				<br />
 
 				<p class="src"><img src="images\qmarks.png" /> Helena Brown - Customer</p>
 				<p>Never thought I would find the perfect bedroom for my baby,
-					but then I saw the products that Your Home offers and I was speechless.
+					but then I saw the products that Your Home offers and I was speechless. The baby sleeps so
+					peacefully on the new bed we got for him, and the night lights... they are so cuteeeee!!!
 					Definite recommend!</p>
+
+				<br />
+
+				<p class="src"><img src="images\qmarks.png" /> Alice Warner - Customer</p>
+				<p>Last year my boyfriend left me, and I thought i'd never get my life back together. I mean I didn't
+					have a place to live so I needed to start from scrap. After my friend recommended me Your Home,
+					I checked it out and I'm just going to say that I easily got my life back on track. I gave them
+					the old stuff and got some new things for free. Who said that shopping doesn't cure a broken heart,
+					right?!</p>
+
+				<br />
+
+				<p class="src"><img src="images\qmarks.png" /> Mathiass Brekker - Customer</p>
+				<p>So this one time, I got really high and of course while that was really good, I also made a mess
+					of my favorite working table. However I immediatley replaced it with one of the working tables here
+					on Your Home and let me just say... I never got to worry about breaking my table again! Also they
+					offer
+					so many great deals if you pay with a credit card.
+				</p>
 			</div>
 
 			<div class="meetTeam">
 				<h2 class="maintitle"> Meet The Team</h2>
-				<p class="src1"><img class="fig1" src="images\image.jpg" /> Persons Name Here</p>
-				<p id="pershkrimi">kejdh aasdjnj kajnx aknxajn anxjnas anlxljx asnxll cdkn sdjebhfdw kewj woifnx eiojcd
-					xwejlwjen xeejlxnj ewdjqxne ejlqnx awjldnq wxljewndx </p>
+				<p class="src1"><img class="fig1" src="images/imgau/ensarja2.jpeg"
+						style="width: 110px; height: 110px;" /> <span class="span">Ensare Islami</span></p>
+				<p id="pershkrimi"> Ensare is our great leader that we all love and respect.
+					She writes the cleanest code you'll ever see and even though we differ in our religious views
+					we still have a lot of fun together. Also, DO NOT call her 'CALE'! <br>
+					<a href="rreth_nesh.html#ensarja">See more</a></p>
 
 				<br />
 
-				<p class="src1"><img class="fig1" src="images\image.jpg" /> Persons Name Here</p>
-				<p id="pershkrimi">kejdh aasdjnj kajnx aknxajn anxjnas anlxljx asnxll cdkn sdjebhfdw kewj woifnx eiojcd
-					xwejlwjen xeejlxnj ewdjqxne ejlqnx awjldnq wxljewndx </p>
+				<p class="src1"><img class="fig1" src="images/imgau/arita2.jpg" /><span class="span">Arita Alidemaj</span></p>
+				<p id="pershkrimi">Arita is a young, hardworking woman, who we like to call 'Vogelushe' due to her
+					babyface and height. However, she is three times squared the ordinary human and works more than
+					you'd think possible. <br>
+					<a href="rreth_nesh.html#arita">See more</a></p>
+				</p>
+
+				<br />
+
+				<p class="src1"><img class="fig1" src="images/imgau/argjenta2.jpg"  /> <span class="span">Argjenta Gashi</span></p>
+				<p id="pershkrimi">Argjenta is the joy of our team. Whenever we feel down or bad she is there with her
+					infectious laughter, and you'll feel better just by hearing her laugh! She keeps the group updated
+					and doesn't let us worry for the stupid things that we love worrying about. <br>
+					<a href="rreth_nesh.html#argjenta">See more</a></p>
+				</p>
+
+
+				<br />
+
+				<p class="src1"><img class="fig1" src="images/imgau/alina2.jpg" style="width: 110px; height: 110px; " />
+					<span class="span">Alina Fazliu</span></p>
+				<p id="pershkrimi">Alina is our mom manager. She keeps us all together,
+					however she just isn't the
+					brightest bulb in the box. She loves calling herself "Alineee, budalliceeee" whenever she doesn't
+					know what she's doing.
+					And that's a lot. <br>
+					<a href="rreth_nesh.html#alina">See more</a></p>
+				</p>
+
 			</div>
 		</section>
 
@@ -104,17 +228,20 @@
 				Have nothing in your houses that you do not know to be useful or believe to be beautiful.”</p>
 			<hr id="vija_poshte">
 			<figure id="galeria">
-				<a href="dhoma_e_dites.html"><img src="images/interieri1.jpg"></a>
+				<a href="interieri\dhoma_dites_produktet\dhd_produkti5.html">
+					<img src="images/imgdhdites/dhd_produkti5.png" style="width: 280px; height: 160px"></a>
 				<figcaption>
-					<a href="dhoma_e_dites.html">VIEW THIS PROJECT </em></a>
+					<a href="interieri\dhoma_dites_produktet\dhd_produkti5.html">VIEW THIS PRODUCT </em></a>
 				</figcaption>
-				<a href="kuzhina.html"><img src="images/interieri2.jpg"></a>
+				<a href="interieri\kuzhina_produktet\produkti5.html">
+					<img src="images/imgkuzhina/e.jpg" style="width: 280px; height: 160px"></a>
 				<figcaption>
-					<a href="kuzhina.html">VIEW THIS PROJECT </em></a>
+					<a href="interieri\kuzhina_produktet\produkti5.html">VIEW THIS PRODUCT </em></a>
 				</figcaption>
-				<a href="dhoma_e_gjumit.html"><img src="images/interieri3.jpg"></a>
+				<a href="interieri\dhoma_gjumit_produktet\dhgj_produkti1.html">
+					<img src="images/imggjumi/dhgj1.jpeg" style="width: 280px; height: 160px"></a>
 				<figcaption>
-					<a href="dhoma_e_gjumit.html">VIEW THIS PROJECT</em></a>
+					<a href="interieri\dhoma_gjumit_produktet\dhgj_produkti1.html">VIEW THIS PRODUCT</em></a>
 				</figcaption>
 			</figure>
 		</div>
@@ -125,41 +252,57 @@
 
 					<div id="a">
 						<h5>ABOUT US</h5>
-						<img src="images/img.jpg">
-						<p>
-							hhhhhhhhhh hhhhhhhhh<br>
-							hhhhhhhhhh hhhhhhhhh<br>
-							hhhhhhhhhh hhhhhhhhh<br>
-							hhhhhhhhhh hhhhhhhhhh<br>
-							hhhhhhhhhh hhhhhhhhhh<br>
+						<img src="images/imgau/fotokryesore.jpg" style="width:200px ; height:90px">
+						<p id="au">
+							Your Home is a furniture store that
+							operates since the 80s. With our bold
+							and hardworking crew, we have expanded
+							our store to three new locations,
+							bringing ourselves closer to the customers!
 							<a href="rreth_nesh.html">Read More>></a>
 						</p>
 					</div>
 
 					<div id="b">
-						<h5 id="links">QUICK LINKS</h5>
-						<a href=" ">LINK <br></a>
-						<a href=" ">LINK <br></a>
-						<a href=" ">LINK <br></a>
-						<a href=" ">LINK <br></a>
-						<a href=" ">LINK <br></a>
-						<a href=" ">LINK <br></a>
-						<a href=" ">LINK <br></a>
-						<a href=" ">LINK <br></a>
-						<a href=" ">LINK <br></a>
-						<a href=" ">LINK <br></a>
+						<h5 id="links">BEST PRODUCTS</h5>
+						<ol>
+							<li><a href="interieri\dhoma_dites_produktet\dhd_produkti1.html">Natalia</a></li>
+							<li><a href="interieri\dhoma_gjumit_produktet\dhgj_produkti3.html">Tommy Bahama</a></li>
+							<li><a href="interieri\dhoma_dites_produktet\dhd_produkti6.html">Starmore</a></li>
+							<li><a href="interieri\kuzhina_produktet\produkti3.html">Zobel and Co Kitchen</a></li>
+							<li><a href="interieri\dhoma_gjumit_produktet\dhgj_produkti4.html">Wayfair</a></li>
+							<li><a href="interieri\dhoma_punes_produktet\dhp_produkti3.html">Palma</a></li>
+							<li><a href="interieri\kuzhina_produktet\produkti6.html">Bescope Kitchen</a></li>
+							<li><a href="interieri\dhoma_punes_produktet\dhp_produkti5.html">Edelmar</a></li>
+							<li><a href="interieri\dhoma_punes_produktet\dhp_produkti2.html">Oisin</a></li>
+							<li><a href="interieri\dhoma_dites_produktet\dhd_produkti5.html">Wystfield</a></li>
+							<li><a href="interieri\kuzhina_produktet\produkti4.html">Calgary Kitchen</a></li>
+							<li><a href="interieri\dhoma_gjumit_produktet\dhgj_produkti5.html">Tuft and Needle</a></li>
+
+						</ol></br>
+
+						<button id="btn1">Add Products</button>
+						<button id="btn2">Add in the beggining</button>
+
 					</div>
 
 					<div id="c">
 						<h5>LATEST BLOG POSTS</h5>
-						<p>Post title <br>
-							here goes smth else <br>
-							here goes smth else <br>
-							<a href="">Read More>></a></p><br>
-						<p> here is another paragraph<br>
-							here goes smth else <br>
-							one more paragraph <br>
-							<a href="">Read More</a></p>
+						<h5>Best modern living room design </h5>
+						<p style="font-size: smaller;">A living room needs to be <br>
+							welcoming for you and your <br>
+							guests. More people will be <br>
+							able to visualize it as... </p>
+						<a href="">Read More>></a></h5><br>
+
+						<h5>Best interior decorating secrets<h5></h5>
+							<p style="font-size: smaller;">Some people have a natural <br>
+								eye for design, but if you're <br>
+								more in the camp of those who <br>
+								can't do anything without <br>
+								consulting Pinterest... </p>
+							<a href="">Read More>></a>
+						</h5><br>
 
 					</div>
 
@@ -167,21 +310,32 @@
 					<div id="d">
 						<h5>CONTACT US</h5>
 						<form method="get" action="">
-							<input type="text" name="name" placeholder="Name" /><br /><br />
-							<input type="text" name="email" placeholder="Email" /><br /><br />
-							<input type="type" name="subject" placeholder="Subject" /><br /><br />
-							<textarea name="message" rows="5" cols="30" placeholder="Message"></textarea> <br /><br />
-							<input type="submit" name="submit">
+							<input type="text" name="name" placeholder="Name" class="f" /><br /><br />
+							<input type="text" name="email" placeholder="Email" class="f" /><br /><br />
+							<input type="type" name="subject" placeholder="Subject" class="f" /><br /><br />
+							<textarea name="message" rows="5" cols="20" placeholder="Message" class="f"></textarea>
+							<br /><br />
+							<input id="submit" type="submit" name="submit">
 						</form>
 					</div>
 				</div>
 				<div>
-					<p id="copyright">Copyright &copy; 2017 Fundamentals of Web Development</p>
+					<address>
+					<p id="copyright">Copyright &copy; 2017 Fundamentals of Web Development
+					
+                     .........email: <a href="mailto:yourhome@gmail.com ">yourhome@gmail.com</a><br/>
+                     </p>
+                     </addrress>
+					
 				</div>
 
 			</section>
 		</footer>
 	</main>
+	<script src="javascript/carousel.js"></script>
+	<script src="javascript/jquerythingz.js"></script>
+	<script src="javascript/confirm.js"></script>
+
 </body>
 
 </html>
