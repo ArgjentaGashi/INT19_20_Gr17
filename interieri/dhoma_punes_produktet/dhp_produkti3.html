@@ -8,6 +8,18 @@
     <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="../../lib/reset.css">
     <link rel="stylesheet" href="../../lib/stilizimi.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="jquery-1.11.2.min.js"></script>
+<script src="../../javascript\zvogelimi.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $(".tabela").slideToggle("slow");
+    $("#flip").text("Unhide table");
+    
+  });
+});
+</script>
 </head>
 
 <body>
@@ -18,11 +30,11 @@
         <nav>
             <div id="smedialinks">
                 <ul>
-                    <li><a href="https://www.linkedin.com/"><img src="../../images/linkedin.png"></a></li>
-                    <li><a href="https://www.twitter.com/"><img src="../../images/twitter.png"></a></li>
-                    <li><a href="https://www.pinterest.com/"><img src="../../images/pinterest.png"></a></li>
-                    <li><a href="https://plus.google.com/"><img src="../../images/googleplus.png"></a></li>
-                    <li><a href="https://www.facebook.com/"><img src="../../images/facebook.png"></a></li>
+                    <li><a href="https://www.linkedin.com/"><abbr title="Linkedin"><img src="../../images/linkedin.png"></abbr></a></li>
+                    <li><a href="https://www.twitter.com/"><abbr title="Twitter"><img src="../../images/twitter.png"></abbr></a></li>
+                    <li><a href="https://www.pinterest.com/"><abbr title="Pinterest"><img src="../../images/pinterest.png"></abbr></a></li>
+                    <li><a href="https://plus.google.com/"><abbr title="+Google"><img src="../../images/googleplus.png"></abbr></a></li>
+                    <li><a href="https://www.facebook.com/"><abbr title="Facebook"><img src="../../images/facebook.png"></abbr></a></li>
                 </ul>
             </div>
 
@@ -81,6 +93,13 @@
                     </tr>
                 </tbody>
             </table>
+            </br>
+    <table border="1" id="flip" >
+        <tr>
+            <td colspan="5" id="flip" >Hide table</td>
+        </tr>
+        </table>
+        <button id="zvogelo">Resize the picture</button>
         </div>
 
         </section>
@@ -156,7 +175,12 @@
 					</div>
 				</div>
 				<div>
-					<p id="copyright">Copyright &copy; 2017 Fundamentals of Web Development</p>
+					<address>
+                     <p id="copyright">Copyright &copy; 2017 Fundamentals of Web Development
+                    
+                     .........email: <a href="mailto:yourhome@gmail.com ">yourhome@gmail.com</a><br/>
+                     </p>
+                    </addrress>
 				</div>
 
 			</section>
