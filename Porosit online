@@ -10,35 +10,37 @@
     <link rel="stylesheet" type="text/css" href="lib/reset.css">
     <link rel="stylesheet" href="lib/animate.css">
     <link rel="stylesheet" href="lib/stilizimi.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="javascript/jquery-3.4.1.min.js"></script>
-    <script src="javascript/jquery-ui.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
-    <script src="javascript\validimi.js"></script>
-    <script src="javascript\produktet.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript\forma.js"></script>
+<script>
+$(document).ready(function(){
+    $("#flip").click(function(){
+      $("#panel").slideToggle("slow");
+    });
+  });
+            $(document).ready(function(){
+              $("button").click(function(){
+                $("#animateee").animate({
+                  left: '250px',
+                  height: '+=100px',
+                  width: '+=100px'
+                });
+              });
+            });
+      
+  </script>
     <style>
-        @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-        @import url(https://fonts.googleapis.com/css?family=Merriweather);
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
 
-        form p {
-            margin-top: 0.5em;
-        }
-
-        form input[type="text"],
-        form select {
-            font-size: 16px;
-            height: 24px;
-            padding: 3px;
-        }
-
-        form select {
-            height: 30px;
-        }
-
+#panel {
+  padding: 50px;
+  display: none;
+}
         .rectangle {
             margin-bottom: 5px;
         }
@@ -67,16 +69,32 @@
             text-decoration: none;
         }
 
-        .borderi {
-            border-radius: 5px;
-        }
-
         table {
             border: 3px solid;
         }
 
         #forme {
             margin: 3% 10% 3% 23%;
+        }
+        table, #animateee{
+            color:#fff;
+            background:linear-gradient( -45deg, #BA9090, #ABA2A2,#752424,#95DDD8);
+            background-size: 400% 400%;
+            animation: change 10s ease-in-out infinite;        }
+        @keyframes change {
+            0%{
+                background-position: 0 50%;
+
+            }
+            50%{
+                background-position: 100% 50%;
+                
+            }
+            100%{
+                background-position: 0 50%;
+                
+            }
+            
         }
     </style>
 
@@ -133,8 +151,11 @@
 
 
     <section>
+        <div id="flip">Welcome.</div>
+        <div id="panel">Choose now,choose well.</div>
         <form method="get" id="mainForm">
-            <h1 id="shpi" style="text-align: center; margin-top:2%;">Shipping Information</h1>
+ 
+            <h1 style="text-align: center; margin-top:2%;">Shipping Information</h1>
             <table cellspacing="50px;" id="forme">
                 <thead>
                     <tr>
@@ -142,45 +163,6 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>
-                            <p>
-                                <label class="f">Name</label><br />
-                                <input class="g required" type="text" placeholder="Product Name" id="prid"
-                                    onblur="f1()" />
-                                <p id="p1"></p>
-
-                                <script>
-                                    function f1() {
-                                        var name = document.getElementById("prid").value;
-                                        let pos = titles.indexOf(name);
-
-                                        document.getElementById("price").innerHTML = prices[pos];
-
-                                        var message;
-                                        message = document.getElementById("p1");
-                                        message.innerHTML = "";
-                                        try {
-                                            if (name == "") throw "Empty";
-                                            if (isNaN(name) == false) throw "Please write the product's name!";
-                                        }
-                                        catch (err) {
-                                            message.innerHTML = err;
-                                        }
-                                    }
-
-                                </script>
-
-                            </p>
-                        </td>
-                        <td>
-                            <p>
-                                <label>Price: </label><br />
-                                <p id="price"> </p>
-
-                            </p>
-                        </td>
-                    </tr>
                     <tr>
                         <td>
                             <p>
@@ -200,27 +182,8 @@
                         <td>
                             <p>
                                 <label class="f">Mobile</label><br />
-                                <input class="g required" type="tel" name="mobile" placeholder="Phone number" value=""
-                                    id="mobnm" onblur="f2()" />
-                                <p id="p2"></p>
-                                <script>
-                                    function f2() {
-                                        var number = document.getElementById("mobnm").value;
-
-                                        var message;
-                                        message = document.getElementById("p2");
-                                        message.innerHTML = "";
-                                        try {
-                                            if (number == "") throw "Empty";
-
-                                            if (isNaN(number)) throw "Please write a number";
-                                        }
-                                        catch (err) {
-                                            message.innerHTML = err;
-                                        }
-                                    }
-
-                                </script>
+                                <input class="g required" type="tel" name="mobile" placeholder="Phone number"
+                                    value="+" />
                             </p>
                         </td>
                         <td>
@@ -235,27 +198,7 @@
                         <td>
                             <p>
                                 <label class="f">Address</label><br />
-                                <input type="text"  class="g required type=" name="address" placeholder="Your address" id="addr"
-                                onblur="f3()"/>
-                                <p id="p3"></p>
-                                <script>
-                                    function f3() {
-                                        var addr = document.getElementById("addr").value;
-
-                                        var message;
-                                        message = document.getElementById("p3");
-                                        message.innerHTML = "";
-                                        try {
-                                            if (addr == "") throw "Empty";
-
-                                            if (isNaN(addr) == false) throw "Please write your Address!";
-                                        }
-                                        catch (err) {
-                                            message.innerHTML = err;
-                                        }
-                                    }
-
-                                </script>
+                                <input class="g required type=" text" name="adress" placeholder="Your adress" />
                             </p>
                         </td>
                         <td>
@@ -270,27 +213,7 @@
                         <td>
                             <p>
                                 <label class="f">Street</label><br />
-                                <input class="g required" type="text" name="street" placeholder="Your street" id="str"
-                                onblur="f4()"/>
-                                <p id="p4"></p>
-                                <script>
-                                    function f4() {
-                                        var str = document.getElementById("str").value;
-
-                                        var message;
-                                        message = document.getElementById("p4");
-                                        message.innerHTML = "";
-                                        try {
-                                            if (str == "") throw "Empty";
-
-                                            if (isNaN(str) == false) throw "Please write your street name!";
-                                        }
-                                        catch (err) {
-                                            message.innerHTML = err;
-                                        }
-                                    }
-
-                                </script>
+                                <input class="g" type="text" name="street" placeholder="Your street" />
                             </p>
                         </td>
                         <td>
@@ -478,27 +401,7 @@
 
                             <p>
                                 <label class="f">City</label><br />
-                                <input class="g required type=" text" name="city" placeholder="Your city" id="city"
-                                onblur="f5()"/>
-                                <p id="p5"></p>
-                                <script>
-                                    function f5() {
-                                        var city = document.getElementById("city").value;
-
-                                        var message;
-                                        message = document.getElementById("p5");
-                                        message.innerHTML = "";
-                                        try {
-                                            if (city == "") throw "Empty";
-
-                                            if (isNaN(city) == false) throw "Please write your City's name!";
-                                        }
-                                        catch (err) {
-                                            message.innerHTML = err;
-                                        }
-                                    }
-
-                                </script>
+                                <input class="g required type=" text" name="city" placeholder="Your city" />
                             </p>
                         </td>
                         <td>
@@ -518,7 +421,7 @@
                         </td>
                         <td>
                             <div class="confirmi">
-                                <input type="submit" class="btn" value="Confirm" id="conf">
+                                <input type="submit" class="btn" value="Confirm">
                             </div>
                         </td>
 
@@ -526,53 +429,21 @@
                     </tr>
                 </tbody>
             </table>
+
         </form>
+  
 
     </section>
-
-
-    <div class="wrapper">
-        <div class="payment">
-            <form action="get" id="payForm">
-                <h2>Card Details</h2>
-                <div class="form">
-                    <div class="card space icon-relative">
-                        <label class="label">Card holder:</label>
-                        <input type="text" class="input require" placeholder="Your Name">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="card space icon-relative">
-                        <label class="label">Card number:</label>
-                        <input type="text" class="input require" placeholder="0000 0000 0000 0000">
-                        <i class="far fa-credit-card"></i>
-                    </div>
-                    <div class="card-grp space">
-                        <div class="card-item icon-relative">
-                            <label class="label">Expiry date:</label>
-                            <input type="text" name="expiry-data" class="input require" placeholder="00 / 00">
-                            <i class="far fa-calendar-alt"></i>
-                        </div>
-                        <div class="card-item icon-relative">
-                            <label class="label">CVC:</label>
-                            <input type="text" class="input require" placeholder="000">
-                            <i class="fas fa-lock"></i>
-                        </div>
-                    </div>
-
-                    <div id="pay">
-                        <input type="submit" class="pay" value="Pay">
-                    </div>
-                    <div class="oobtn" id="oobtn">
-                        Close
-                    </div>
-                </div>
-            </form>
-        </div>
+    <div class="anim" style="margin-left:23%">
+    <p>You mad cause u paid a lot?</p>
+    <button style="  font-size: 15px;
+    height: 25px;
+    border-radius: 3px;
+    background: #E4E2E2;
+    text-decoration: none;">Click me for a surprise;)</button><br/><br/>
+    <div  id="animateee" style="height:60px;width:60px; text-align: center;">come back again.</div>
+    <br/><br/>
     </div>
-
-
-
-
     <footer>
         <section class="foot">
             <div class="A">
