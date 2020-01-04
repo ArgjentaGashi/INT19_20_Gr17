@@ -284,8 +284,31 @@
 
 						</ol></br>
 
-						<button id="btn1">Add Products</button>
-						<button id="btn2">Add in the beggining</button>
+						<div id="supported"></div>  
+						<div id="unsupported"></div>  
+						<button onclick="worker();" id="btn3">Subscribe</button>  
+						<script type="text/javascript">  
+							function worker()   
+							{  
+								if(typeof(Worker)!=="undefined"){  
+									document.getElementById("supported").innerHTML="You subscribed the browser..";   
+								}
+								else
+								{
+									document.getElementById("unsupported").innerHTML="Not supporting";}
+								}
+							</script>
+							<style>
+								#btn3
+								{
+									border-radius: 5px;
+									background-color: F1F1F1;
+									font-family: Alegreya Sans SC;
+									float: top;
+								}
+							</style>
+							<button id="btn1">Add Products</button>
+							<button id="btn2">Add in the beggining</button>
 
 					</div>
 
