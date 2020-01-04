@@ -1,29 +1,235 @@
 <!DOCTYPE html>
-<html>
+<div>
 
-<head en="lang">
-    <meta charset="utf-8">
-    <title>Your Home</title>
-    <link href='https://fonts.googleapis.com/css?family=David Libre' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Allan' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="lib/reset.css">
-    <link rel="stylesheet" href="lib/animate.css">
-    <link rel="stylesheet" href="lib/stilizimi.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="jquery-1.11.2.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("#hide").click(function(){
-    $(".showhide").hide();
-  });
-  $("#show").click(function(){
-    $(".showhide").show();
+    <head en="lang">
+        <meta charset="utf-8">
+        <title>Your Home</title>
+        <link href='https://fonts.googleapis.com/css?family=David Libre' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Allan' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="lib/reset.css">
+        <link rel="stylesheet" href="lib/animate.css">
+        <link rel="stylesheet" href="lib/stilizimi.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="jquery-1.11.2.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="javascript\forma.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#hide").click(function () {
+                    $(".showhide").hide(function () {
+                        alert("Note is gone!!");
+                    });
+                });
+                $("#show").click(function () {
+                    $(".showhide").show();
+                });
+            });
+            $(document).ready(function () {
+                $("#btn1").click(function () {
+                    $("#test1").text("Thanks for choosing us!");
+                });
+                $("#btn2").click(function () {
+                    $("#test2").html("<b>Thanks in bolder way,haha;)</b>");
+                });
+                $("#btn3").click(function () {
+                    $("#test3").val("See U soon!!!");
+                });
+            });
+            $(document).ready(function () {
+                $(".hehe").click(function () {
+                    $("#haha").remove();
+                });
+            });
+            $(document).ready(function(){
+  $(".emptyyy").click(function(){
+    $(".thanks").empty();
   });
 });
-</script>
-</head>
+$(document).ready(function(){
+  $(".colors").on({
+    mouseenter: function(){
+      $(this).css("background-color", "lightgray");
+    },  
+    mouseleave: function(){
+      $(this).css("background-color", "lightblue");
+    }, 
+    click: function(){
+      $(this).css("background-color", "yellow");
+    }  
+  });
+});
+
+        </script>
+
+        <style>
+            @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+            @import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+            .margina {
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
+
+            .tabela {
+                width: 90%;
+                margin: 0 auto;
+                resize: none;
+                overflow: hidden;
+            }
+
+            legend {
+                background-color: #696969;
+                background-size: 15%;
+                color: white;
+                margin: 0 auto;
+                width: 75%;
+                padding: 0.35em;
+                text-align: center;
+                font-weight: bold;
+                font-size: 30px;
+            }
+
+            fieldset {
+
+                margin: 1em auto;
+                background-color: #F5F5F5;
+                width: 65%;
+                -webkit-animation-name: example;
+                /* Safari 4.0 - 8.0 */
+                -webkit-animation-duration: 20s;
+                /* Safari 4.0 - 8.0 */
+                animation-name: example;
+                animation-duration: 20s;
+            }
+
+            /* Safari 4.0 - 8.0 */
+            @-webkit-keyframes example {
+                from {
+                    background-color: #F5F5F5;
+                }
+
+                to {
+                    background-color: #B58380
+                }
+            }
+
+            /* Standard syntax */
+            @keyframes example {
+                from {
+                    background-color: #F5F5F5;
+                }
+
+                to {
+                    background-color: #B58380;
+                }
+            }
+
+            form p {
+                margin-top: 0.5em;
+            }
+
+            form input[type="text"],
+            form select {
+                font-size: 16px;
+                height: 24px;
+                padding: 3px;
+            }
+
+            form select {
+                height: 30px;
+            }
+            
+            .showhide, .thanks {
+                border: 1pt solid grey;
+                border-radius: 5px;
+                padding: 0.5em;
+                margin-bottom: 0.4em;
+                width: 350px;
+                word-wrap: none;
+                margin-left: 35%;
+                outline-offset: 8px;
+                outline: 2px dashed #752424;
+            }
+
+            #show , .hehe, .emptyyy{
+                margin-left: 40%;
+                border-radius: 3px;
+                height: 30px;
+            }
+
+            .rectangle {
+                margin-bottom: 5px;
+            }
+
+            .error {
+                background: #FFCDD2 url(error.png) no-repeat 98% center;
+                box-shadow: 0 0 5px #FF5252;
+                border-color: #FF1744;
+            }
+
+
+
+            .btn {
+                -webkit-border-radius: 3;
+                -moz-border-radius: 3;
+                border-radius: 10px;
+                font-size: 15px;
+                height: 32px;
+                color: white;
+                background: #696969;
+                height: 50px;
+                text-decoration: none;
+                width: 150px;
+            }
+
+            .btn:hover {
+                background: lightslategray;
+                text-decoration: none;
+            }
+
+            .borderi {
+                border-radius: 5px;
+            }
+          .pozita  {
+              text-align: center;
+  width: 55px;
+  height: 55px;
+  background-color: red;
+  position: relative;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite;/* Safari 4.0 - 8.0 */
+  -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+  animation-name: ex;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;  
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes ex {
+  0%   {background-color:rgb(151, 41, 41); left:0px; top:0px;}
+  25%  {background-color:rgb(255, 115, 0); left:1460px; top:0px;}
+  50%  {background-color:rgb(216, 11, 21); left:1460px; top:1250px;}
+  75%  {background-color:rgb(21, 58, 21); left:0px; top:1250px;}
+  100% {background-color:rgb(161, 196, 35); left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes ex {
+  0%   {background-color:rgb(151, 41, 41); left:0px; top:0px;}
+  25%  {background-color:rgb(255, 115, 0); left:1460px; top:0px;}
+  50%  {background-color:rgb(216, 11, 21); left:1460px; top:1250px;}
+  75%  {background-color:rgb(21, 58, 21); left:0px; top:1250px;}
+  100% {background-color:rgb(161, 196, 35); left:0px; top:0px;}
+}
+
+
+
+        </style>
+
+    </head>
 
 <body>
     <header class="animated fadeIn">
