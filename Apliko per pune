@@ -231,173 +231,224 @@ $(document).ready(function(){
 
     </head>
 
-<body>
-    <header class="animated fadeIn">
+    <body>
+        <header class="animated fadeIn">
 
-        <h1>Your Home</h1>
-        <h3>Where dreams come true</h3>
-        <nav>
-            <div id="smedialinks">
-                <ul>
-                    <li><a href="https://www.linkedin.com/"><img src="images/linkedin.png"></a></li>
-                    <li><a href="https://www.twitter.com/"><img src="images/twitter.png"></a></li>
-                    <li><a href="https://www.pinterest.com/"><img src="images/pinterest.png"></a></li>
-                    <li><a href="https://plus.google.com/"><img src="images/googleplus.png"></a></li>
-                    <li><a href="https://www.facebook.com/"><img src="images/facebook.png"></a></li>
-                </ul>
+            <div id="dialogbox">
+                <div>
+                    <div id="dialogboxhead"></div>
+                    <div id="dialogboxbody"></div>
+                    <div id="dialogboxfoot"></div>
+                </div>
             </div>
 
-            <div id="search">
-                <form method="get" action="">
-                    <input type="search" name="Search">
-                </form>
-            </div>
-
-
-            <div class="navbar">
-                <a href="index.html">Home</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Interior
-                        <i class="fa fa-angle-down"></i>
-                    </button>
-                    <div class="dropcnt">
-                        <a href="interieri/dhoma_e_dites.html">Living Room</a>
-                        <a href="interieri/kuzhina.html">Kitchen</a>
-                        <a href="interieri/dhoma_e_gjumit.html">Bedroom</a>
-                        <a href="interieri/dhoma_e_punes.html">Workroom</a>
-                    </div>
-                </div>
-                <a href="tips_and_tricks.html">Tips and tricks</a>
-                <a href="porosit_online.html">Online order</a>
-                <a href="apliko_per_pune.html">Apply for job</a>
-                <a href="rreth_nesh.html">About us</a>
-            </div>
-        </nav>
-    </header>
-
- 
-    <div class="apply">
-        <h4>APPLY FOR JOB</h4>
-        <br /><br /><br /><br /><br />
-       
-        <form class="aplikimi">
-            <label class="tedhenat">Name:</label>
-            <input id="p1" class="inputi" type="text" name="namee" placeholder="Write your name"><br /><br>
-
-            <label class="tedhenat">Last name:</label>
-            <input id="p1" class="inputi" type="text" name="lastname" placeholder="Write your last name"><br /><br />
-
-            <label class="tedhenat">Email:</label>
-            <input id="p1" class="inputi" type="text" name="email" placeholder="Write your email"><br /><br />
-
-            <label class="tedhenat">Telephone:</label>
-            <input id="p1" class="inputi" type="tel" name="telephonee" value="+"><br /><br />
-
-            <label class="tedhenat">Gender:</label>
-            <select id="p1" class="inputi" name="gender" placeholder="Gender">
-                <option value="Femër">Female</option>
-                <option value="Mashkull">Male</option>
-            </select><br /><br />
-
-            <label class="tedhenat">Birthdate:</label>
-            <input id="p1" class="inputi" type="date" name="Birthdate" placeholder="Birthdate"><br /><br />
-
-            <label class="tedhenat">Country:</label>
-            <input id="p1" class="inputi" type="type" name="country" placeholder="Country"><br /><br />
-
-            <label class="tedhenat">City:</label>
-            <input id="p1" class="inputi" type="text" name="city" placeholder="City"><br /><br />
-
-            <label class="tedhenat">Street:</label>
-            <input id="p1" class="inputi" type="text" name="street" placeholder="Write your street"><br /><br />
-
-            <label class="tedhenat">Upload CV:</label>
-            <input id="p1" class="inputi" type="file" alt="No file chosen"><br /><br />
-
-            <button id="p1" class="butoni" type="button">APLIKO</button>
-        </form>
-        <pre class="showhide">     Note: you came here because you 
-     want to be part of us.
-     Do not regret and good luck.<button id="hide">...</button> </pre><pre>     <button id="show"> Show to get that motivation!!</button></pre>
-    </div>
-
-    <footer>
-        <section class="foot">
-            <div class="A">
-
-                <div id="a">
-                    <h5>ABOUT US</h5>
-                    <img src="images/imgau/fotokryesore.jpg" style="width:200px ; height:90px">
-                    <p id="au">
-                        Your Home is a furniture store that
-                        operates since the 80s. With our bold
-                        and hardworking crew, we have expanded
-                        our store to three new locations,
-                        bringing ourselves closer to the customers!
-                        <a href="rreth_nesh.html">Read More>></a>
-                    </p>
+            <h1>Your Home</h1>
+            <h3>Where dreams come true</h3>
+            <nav>
+                <div id="smedialinks">
+                    <ul>
+                        <li><a href="https://www.linkedin.com/"><img src="images/linkedin.png"></a></li>
+                        <li><a href="https://www.twitter.com/"><img src="images/twitter.png"></a></li>
+                        <li><a href="https://www.pinterest.com/"><img src="images/pinterest.png"></a></li>
+                        <li><a href="https://plus.google.com/"><img src="images/googleplus.png"></a></li>
+                        <li><a href="https://www.facebook.com/"><img src="images/facebook.png"></a></li>
+                    </ul>
                 </div>
 
-                <div id="b">
-                    <h5 id="links">BEST PRODUCTS</h5>
-                    <ol>
-                        <li><a href="interieri\dhoma_dites_produktet\dhd_produkti1.html">Natalia</a></li>
-                        <li><a href="interieri\dhoma_gjumit_produktet\dhgj_produkti3.html">Tommy Bahama</a></li>
-                        <li><a href="interieri\dhoma_dites_produktet\dhd_produkti6.html">Starmore</a></li>
-                        <li><a href="interieri\kuzhina_produktet\produkti3.html">Zobel and Co Kitchen</a></li>
-                        <li><a href="interieri\dhoma_gjumit_produktet\dhgj_produkti4.html">Wayfair</a></li>
-                        <li><a href="interieri\dhoma_punes_produktet\dhp_produkti3.html">Palma</a></li>
-                        <li><a href="interieri\kuzhina_produktet\produkti6.html">Bescope Kitchen</a></li>
-                        <li><a href="interieri\dhoma_punes_produktet\dhp_produkti5.html">Edelmar</a></li>
-                        <li><a href="interieri\dhoma_punes_produktet\dhp_produkti2.html">Oisin</a></li>
-                        <li><a href="interieri\dhoma_dites_produktet\dhd_produkti5.html">Wystfield</a></li>
-                        <li><a href="interieri\kuzhina_produktet\produkti4.html">Calgary Kitchen</a></li>
-                        <li><a href="interieri\dhoma_gjumit_produktet\dhgj_produkti5.html">Tuft and Needle</a></li>
-
-                    </ol></br>
-
-                    <button id="btn1">Add Products</button>
-                    <button id="btn2">Add in the beggining</button>
-                    
-                </div>
-
-                <div id="c">
-                    <h5>LATEST BLOG POSTS</h5>
-                    <h5>Best modern living room design </h5>
-                     <p style="font-size: smaller;">A living room needs to be <br>
-                        welcoming for you and your <br>
-                        guests. More people will be <br>
-                        able to visualize it as... </p>
-                        <a href="">Read More>></a></h5><br>
-
-                    <h5>Best interior decorating secrets<h5></h5>
-                    <p style="font-size: smaller;">Some people have a natural <br>
-                        eye for design, but if you're <br>
-                        more in the camp of those who <br>
-                        can't do anything without <br>
-                        consulting Pinterest... </p>
-                        <a href="">Read More>></a></h5><br>
-
-                </div>
-
-
-                <div id="d">
-                    <h5>CONTACT US</h5>
+                <div id="search">
                     <form method="get" action="">
-                        <input type="text" name="name" placeholder="Name" class="f" /><br /><br />
-                        <input type="text" name="email" placeholder="Email" class="f"/><br /><br />
-                        <input type="type" name="subject" placeholder="Subject" class="f"/><br /><br />
-                        <textarea name="message" rows="5" cols="20" placeholder="Message" class="f"></textarea> <br /><br />
-                        <input id="submit" type="submit" name="submit">
+                        <input type="search" name="Search">
                     </form>
                 </div>
-            </div>
-            <div>
-                <p id="copyright">Copyright &copy; 2017 Fundamentals of Web Development</p>
-            </div>
 
+
+                <div class="navbar">
+                    <a href="index.html">Home</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Interior
+                            <i class="fa fa-angle-down"></i>
+                        </button>
+                        <div class="dropcnt">
+                            <a href="interieri/dhoma_e_dites.html">Living Room</a>
+                            <a href="interieri/kuzhina.html">Kitchen</a>
+                            <a href="interieri/dhoma_e_gjumit.html">Bedroom</a>
+                            <a href="interieri/dhoma_e_punes.html">Workroom</a>
+                        </div>
+                    </div>
+                    <a href="tips_and_tricks.html">Tips and tricks</a>
+                    <a href="porosit_online.html">Online order</a>
+                    <a href="apliko_per_pune.html">Apply for job</a>
+                    <a href="rreth_nesh.html">About us</a>
+                </div>
+            </nav>
+        </header>
+        <section class="margina">
+            <div class="pozita">Apply</div>
+            <form method="get" id="mainForm">
+                <fieldset>
+                    <legend>APPLY FOR JOB</legend>
+                    <table class="tabela">
+                        <tr>
+                            <td>
+                                <p><label>Name:</label><br />
+                                    <input class="borderi required" type="text" name="namee"
+                                        placeholder="Write your name">
+                                </p>
+                                <p>
+                                    <label>Last name:</label><br />
+                                    <input class="borderi required" type="text" name="lastname"
+                                        placeholder="Write your last name">
+                                </p>
+                                <p>
+                                    <label>Email:</label><br />
+                                    <input class="borderi required" type="text" name="email"
+                                        placeholder="Write your email">
+                                </p>
+                                <p>
+                                    <label>Telephone:</label><br />
+                                    <input class="borderi" style="width:188px; padding:0.5em" type="tel"
+                                        name="telephonee" value="+"></p>
+                            </td>
+                            <td>
+                                <p> <label>Country:</label><br />
+                                    <input class="borderi required" style="width:188px; padding:0.5em" type="type"
+                                        name="country" placeholder="Country"></p>
+                                <p>
+                                    <label>City:</label><br />
+                                    <input class="borderi required" type="text" name="city" placeholder="City">
+                                    <p>
+                                        <label>Street:</label><br />
+                                        <input class="borderi" type="text" name="street"
+                                            placeholder="Write your street">
+                                    </p>
+                                    <p> <label>Upload CV:</label><br />
+                                        <input type="file" alt="No file chosen"></p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p> <label>Gender:</label><br />
+                                    <input class="borderi" type="radio" name="type" value="1" checked>Female<br />
+                                    <input class="borderi" type="radio" value="2">Male</p>
+                                <p>
+                                    <label>Birthdate:</label><br />
+                                    <input class="borderi" style="width:188px; padding:0.5em" type="date"
+                                        name="Birthdate" placeholder="Birthdate"><br /><br /></p>
+                            </td>
+
+                            <td>
+                                <div class="rectangle centered">
+                                    <input type="submit" class="btn"></input>
+                                </div>
+                            </td>
+                        </tr>
+
+
+                    </table>
+                </fieldset>
+            </form>
+            <div id="haha">
+                <pre class="showhide" id="haha">Note:You came here because you 
+    want to be part of us.
+    Do not regret and good luck.<button id="hide">...</button> </pre>
+                <pre><button id="show" > Show to get that motivation!!</button></pre>
+            </div>
+            <br /><br />
+            <div class="thanks" style="text-align: center;">
+                <p id="test1"></p>
+                <p id="test2"></p>
+
+                <p><input style="text-align: center" id="test3" value="..."></p>
+
+                <button id="btn1">Set Text</button>
+                <button id="btn2">Set HTML</button>
+                <button id="btn3">Set Value</button>
+            </div>
+            <button class="hehe" style="margin-top: 3%;">I didn't get motivated,so bye.</button><br/><br/>
+            <button class="emptyyy" style="margin-top:1%;margin-left: 39.2%;">Sorry u little box, I'm emptying u.</button>
+            <div class="colors" style="margin-left: 75%; width:300px; margin-top: 3%;">Before leaving us,click or move the mouse pointer over this,look what happens.</div>
         </section>
-    </footer>
-    </main>
-    <script src="javascript\jqueryfocusblur.js"></script>
-</body>
+
+        <footer>
+            <section class="foot">
+                <div class="A">
+
+                    <div id="a">
+                        <h5>ABOUT US</h5>
+                        <img src="images/imgau/fotokryesore.jpg" style="width:200px ; height:90px">
+                        <p id="au">
+                            Your Home is a furniture store that
+                            operates since the 80s. With our bold
+                            and hardworking crew, we have expanded
+                            our store to three new locations,
+                            bringing ourselves closer to the customers!
+                            <a href="rreth_nesh.html">Read More>></a>
+                        </p>
+                    </div>
+
+                    <div id="b">
+                        <h5 id="links">BEST PRODUCTS</h5>
+                        <ol>
+                            <li><a href="interieri\dhoma_dites_produktet\dhd_produkti1.html">Natalia</a></li>
+                            <li><a href="interieri\dhoma_gjumit_produktet\dhgj_produkti3.html">Tommy Bahama</a></li>
+                            <li><a href="interieri\dhoma_dites_produktet\dhd_produkti6.html">Starmore</a></li>
+                            <li><a href="interieri\kuzhina_produktet\produkti3.html">Zobel and Co Kitchen</a></li>
+                            <li><a href="interieri\dhoma_gjumit_produktet\dhgj_produkti4.html">Wayfair</a></li>
+                            <li><a href="interieri\dhoma_punes_produktet\dhp_produkti3.html">Palma</a></li>
+                            <li><a href="interieri\kuzhina_produktet\produkti6.html">Bescope Kitchen</a></li>
+                            <li><a href="interieri\dhoma_punes_produktet\dhp_produkti5.html">Edelmar</a></li>
+                            <li><a href="interieri\dhoma_punes_produktet\dhp_produkti2.html">Oisin</a></li>
+                            <li><a href="interieri\dhoma_dites_produktet\dhd_produkti5.html">Wystfield</a></li>
+                            <li><a href="interieri\kuzhina_produktet\produkti4.html">Calgary Kitchen</a></li>
+                            <li><a href="interieri\dhoma_gjumit_produktet\dhgj_produkti5.html">Tuft and Needle</a></li>
+
+                        </ol></br>
+
+                        <button id="btn1">Add Products</button>
+                        <button id="btn2">Add in the beggining</button>
+
+                    </div>
+
+                    <div id="c">
+                        <h5>LATEST BLOG POSTS</h5>
+                        <h5>Best modern living room design </h5>
+                        <p style="font-size: smaller;">A living room needs to be <br>
+                            welcoming for you and your <br>
+                            guests. More people will be <br>
+                            able to visualize it as... </p>
+                        <a href="">Read More>></a></h5><br>
+
+                        <h5>Best interior decorating secrets<h5></h5>
+                            <p style="font-size: smaller;">Some people have a natural <br>
+                                eye for design, but if you're <br>
+                                more in the camp of those who <br>
+                                can't do anything without <br>
+                                consulting Pinterest... </p>
+                            <a href="">Read More>></a>
+                        </h5><br>
+
+                    </div>
+
+
+                    <div id="d">
+                        <h5>CONTACT US</h5>
+                        <form method="get" action="">
+                            <input type="text" name="name" placeholder="Name" class="f" /><br /><br />
+                            <input type="text" name="email" placeholder="Email" class="f" /><br /><br />
+                            <input type="type" name="subject" placeholder="Subject" class="f" /><br /><br />
+                            <textarea name="message" rows="5" cols="20" placeholder="Message" class="f"></textarea>
+                            <br /><br />
+                            <input id="submit" type="submit" name="submit">
+                        </form>
+                    </div>
+                </div>
+                <div>
+                    <p id="copyright">Copyright &copy; 2017 Fundamentals of Web Development</p>
+                </div>
+
+            </section>
+        </footer>
+        </main>
+        <script src="javascript\jqueryfocusblur.js"></script>
+    </body>
