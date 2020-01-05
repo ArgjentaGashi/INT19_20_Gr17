@@ -15,7 +15,7 @@ function customConf(){
 	    dialogbox.style.top = "100px";
         dialogbox.style.display = "block";
         
-		document.getElementById('dialogboxhead').innerHTML='THIS YEARS\S SPECIAL OFFERS!';
+		document.getElementById('dialogboxhead').innerHTML='THIS YEARS\' SPECIAL OFFERS!';
 	    document.getElementById('dialogboxbody').innerHTML = dialog;
         document.getElementById('dialogboxfoot').innerHTML = 
         '<button onclick="Konfirmimi.yes()">Yes</button> <button onclick="Konfirmimi.no()">No</button>';
