@@ -444,7 +444,7 @@ $(document).ready(function(){
     <div  id="animateee" style="height:60px;width:60px; text-align: center;">come back again.</div>
     <br/><br/>
     </div>
-    <footer>
+   <footer>
         <section class="foot">
             <div class="A">
 
@@ -528,6 +528,10 @@ $(document).ready(function(){
 
         </section>
     </footer>
+    </main>
+</body>
+
+</html>
     </main>
 </body>
 
