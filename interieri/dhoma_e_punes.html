@@ -8,7 +8,45 @@
     <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="../lib/reset.css">
     <link rel="stylesheet" href="../lib/stilizimi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="javascript/jquery-3.4.1.min.js"></script>
+
 </head>
+
+<style>
+    #const {
+        text-align: center;
+    }
+
+    #btn6 {
+        border-radius: 5px;
+        background-color: F1F1F1;
+        font-family: Alegreya Sans SC;
+        margin-top: 17px;
+        font-size: 20px;
+
+    }
+
+    #btn4 {
+        border-radius: 5px;
+        background-color: F1F1F1;
+        font-family: Alegreya Sans SC;
+        margin-top: 5px;
+        margin-left: 45%;
+        font-size: 20px;
+
+    }
+
+    #btn5 {
+        border-radius: 5px;
+        background-color: F1F1F1;
+        font-family: Alegreya Sans SC;
+        margin-top: 2px;
+        margin-left: 48%;
+        font-size: 20px;
+    }
+</style>
 
 <body>
     <header>
@@ -18,11 +56,16 @@
         <nav>
             <div id="smedialinks">
                 <ul>
-                    <li><a href="https://www.linkedin.com/"><img src="../images/linkedin.png"></a></li>
-                    <li><a href="https://www.twitter.com/"><img src="../images/twitter.png"></a></li>
-                    <li><a href="https://www.pinterest.com/"><img src="../images/pinterest.png"></a></li>
-                    <li><a href="https://plus.google.com/"><img src="../images/googleplus.png"></a></li>
-                    <li><a href="https://www.facebook.com/"><img src="../images/facebook.png"></a></li>
+                    <li><a href="https://www.linkedin.com/"><abbr title="Linkedin"><img
+                                    src="../images/linkedin.png"></abbr></a></li>
+                    <li><a href="https://www.twitter.com/"><abbr title="Twitter"><img
+                                    src="../images/twitter.png"></abbr></a></li>
+                    <li><a href="https://www.pinterest.com/"><abbr title="Pinterest"><img
+                                    src="../images/pinterest.png"></abbr></a></li>
+                    <li><a href="https://plus.google.com/"><abbr title="+Google"><img
+                                    src="../images/googleplus.png"></abbr></a></li>
+                    <li><a href="https://www.facebook.com/"><abbr title="Facebook"><img
+                                    src="../images/facebook.png"></abbr></a></li>
                 </ul>
             </div>
 
@@ -93,6 +136,90 @@
 
         </section>
 
+        <script type="text/javascript">
+            const percent = Math.pow(5, 2);
+            const sale = "sale";
+            const x = 38344851533;
+            const kompania = "YOUR HOME"
+            const date = new Date('May 17, 2020 23:59:59');
+            var newParagraph = document.createElement("p");
+            var newText = document.createTextNode(" If you want to take a " + sale + " in one of products what we have in stock, please start a game and win " + percent + "% sale in every product. If you win call in this number +" + x + " and tell us which product you want in " + kompania + ". Valid until date: " + date);
+            newParagraph.appendChild(newText);
+            document.body.appendChild(newParagraph);
+            document.body.appendChild(newParagraph).style.textAlign = "center";
+
+            function myFunction() {
+
+                var n = percent.toExponential(5);
+                const m = "€ <br> Se tani po thojne Matematika svyn sen!";
+                document.getElementById("det").innerHTML = n + m;
+                document.getElementById("det").style.color = "black";
+
+
+            }
+            function myFunction1() {
+                var str = "The Your Home, is Your Home. If you want to bye smth for Your Home you have in " + " Your Home";
+                var res = str.match(/Your Home/g);
+                document.getElementById("det1").innerHTML = res;
+                document.getElementById("det1").style.textAlign = "center";
+                document.getElementById("det1").style.color = "black";
+
+            }
+            function myFunction2() {
+                var str = document.getElementById("det2").innerHTML;
+                var res = str.replace("Arita", "Alina");
+                document.getElementById("det2").innerHTML = res;
+            }
+        </script>
+        </div>
+        <div id="const">
+            <h1>About us in three points...</h1>
+            <button onclick="myFunction()" id="btn6">Click for surprise</button>
+            <p id="det">FOR YOU WE HAVE:</p>
+        </div>
+        <div>
+
+            <button onclick="myFunction1()" id="btn4">4X Your Home</button>
+
+            <p id="det1"></p>
+
+            <p id="det2" style="text-align: center;">Visit Arita!</p>
+
+            <button onclick="myFunction2()" id="btn5">Try it</button>
+        </div>
+        </div>
+        <p id="det3"></p>
+        <script type="text/javascript">
+            function Person(first, last, age, eye) {
+                this.firstName = first;
+                this.lastName = last;
+                this.age = age;
+                this.eyeColor = eye;
+            }
+
+            var partner1 = new Person("Arita", "Alidemaj", 20, "brown");
+            var partner2 = new Person("Argjenta", "Gashi", 21, "green");
+            var partner3 = new Person("Alina", "Fazliu", 19, "brown");
+            var partner4 = new Person("Ensare", "Islami", 19, "brown");
+
+            document.getElementById("det3").innerHTML =
+                "Arita is " + partner1.age + " years old, Argjenta is " + partner2.age + " years old and Ensare&Alina have " + partner4.eyeColor + " color eyes.";
+            document.getElementById("det3").style.textAlign = "center";
+
+
+
+        </script>
+        <p id="det4"></p>
+        <script type="text/javascript">
+            var q = myFunction3(1900, 86);
+
+            function myFunction3(w, v) {
+                return w + v;
+            }
+            document.getElementById("det4").innerHTML = "With you " + q + " years.";
+            document.getElementById("det4").style.textAlign = "center";
+
+        </script>
 
         <footer>
             <section class="foot">
@@ -100,35 +227,38 @@
 
                     <div id="a">
                         <h5>ABOUT US</h5>
-                        <img src="images/imgau/fotokryesore.jpg" style="width:200px ; height:90px">
+                        <img src="../images/imgau/fotokryesore.jpg" style="width:200px ; height:90px">
                         <p id="au">
                             Your Home is a furniture store that
                             operates since the 80s. With our bold
                             and hardworking crew, we have expanded
                             our store to three new locations,
                             bringing ourselves closer to the customers!
-                            <a href="rreth_nesh.html">Read More>></a>
+                            <a href="../rreth_nesh.html">Read More>></a>
                         </p>
                     </div>
 
                     <div id="b">
                         <h5 id="links">BEST PRODUCTS</h5>
                         <ol>
-                            <li><a href="interieri\dhoma_dites_produktet\dhd_produkti1.html">Natalia</a></li>
-                            <li><a href="interieri\dhoma_gjumit_produktet\dhgj_produkti3.html">Tommy Bahama</a></li>
-                            <li><a href="interieri\dhoma_dites_produktet\dhd_produkti6.html">Starmore</a></li>
-                            <li><a href="interieri\kuzhina_produktet\produkti3.html">Zobel and Co Kitchen</a></li>
-                            <li><a href="interieri\dhoma_gjumit_produktet\dhgj_produkti4.html">Wayfair</a></li>
-                            <li><a href="interieri\dhoma_punes_produktet\dhp_produkti3.html">Palma</a></li>
-                            <li><a href="interieri\kuzhina_produktet\produkti6.html">Bescope Kitchen</a></li>
-                            <li><a href="interieri\dhoma_punes_produktet\dhp_produkti5.html">Edelmar</a></li>
-                            <li><a href="interieri\dhoma_punes_produktet\dhp_produkti2.html">Oisin</a></li>
-                            <li><a href="interieri\dhoma_dites_produktet\dhd_produkti5.html">Wystfield</a></li>
-                            <li><a href="interieri\kuzhina_produktet\produkti4.html">Calgary Kitchen</a></li>
-                            <li><a href="interieri\dhoma_gjumit_produktet\dhgj_produkti5.html">Tuft and Needle</a></li>
+                            <li><a href="dhoma_dites_produktet/dhd_produkti1.html">Natalia</a></li>
+                            <li><a href="dhoma_gjumit_produktet/dhgj_produkti3.html">Tommy Bahama</a></li>
+                            <li><a href="dhoma_dites_produktet\dhd_produkti6.html">Starmore</a></li>
+                            <li><a href="kuzhina_produktet\produkti3.html">Zobel and Co Kitchen</a></li>
+                            <li><a href="dhoma_gjumit_produktet\dhgj_produkti4.html">Wayfair</a></li>
+                            <li><a href="dhoma_punes_produktet\dhp_produkti3.html">Palma</a></li>
+                            <li><a href="kuzhina_produktet\produkti6.html">Bescope Kitchen</a></li>
+                            <li><a href="dhoma_punes_produktet\dhp_produkti5.html">Edelmar</a></li>
+                            <li><a href="dhoma_punes_produktet\dhp_produkti2.html">Oisin</a></li>
+                            <li><a href="dhoma_dites_produktet\dhd_produkti5.html">Wystfield</a></li>
+                            <li><a href="kuzhina_produktet\produkti4.html">Calgary Kitchen</a></li>
+                            <li><a href="dhoma_gjumit_produktet\dhgj_produkti5.html">Tuft and Needle</a></li>
 
                         </ol></br>
 
+                        <div id="supported"></div>
+                        <div id="unsupported"></div>
+                        <button onclick="worker();" id="btn3">Subscribe</button>
                         <button id="btn1">Add Products</button>
                         <button id="btn2">Add in the beggining</button>
 
@@ -157,7 +287,7 @@
 
                     <div id="d">
                         <h5>CONTACT US</h5>
-                        <form method="get" action="">
+                        <form method="POST" action="" onsubmit="return checkForm(this);">
                             <input type="text" name="name" placeholder="Name" class="f" /><br /><br />
                             <input type="text" name="email" placeholder="Email" class="f" /><br /><br />
                             <input type="type" name="subject" placeholder="Subject" class="f" /><br /><br />
@@ -168,12 +298,20 @@
                     </div>
                 </div>
                 <div>
-                    <p id="copyright">Copyright &copy; 2017 Fundamentals of Web Development</p>
+                    <address>
+
+                        <p id="copyright">Copyright &copy; 2017 Fundamentals of Web Development
+
+                            .........email: <a href="mailto:yourhome@gmail.com ">yourhome@gmail.com</a><br />
+                        </p>
+                        </addrress>
                 </div>
 
             </section>
         </footer>
     </main>
+    <script src="../javascript/allpages.js"></script>
+    <script src="../javascript/jquerythingz.js"></script>
 </body>
 
 </html>
