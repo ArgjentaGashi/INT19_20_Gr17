@@ -189,3 +189,371 @@
         </nav>
     </header>
 
+         <section>
+        <div id="flip">Welcome.</div>
+        <div id="panel">Choose now, choose well.</div>
+
+        <form method="POST" id="mainForm" action="paguaj.html" onsubmit="return checkForm(this);">
+            <h1 id="shpi" style="text-align: center; margin-top:2%;">Shipping Information</h1>
+            <table cellspacing="50px;" id="forme">
+                <thead>
+                    <tr>
+                        <th>Personal Information</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>
+                                <label class="f">Product Name</label><br />
+                                <input class="g required" type="text" placeholder="Product Name" id="prid" onblur="f1()"
+                                    name="name" />
+                                <p id="p1"></p>
+
+                                <script>
+                                    function f1() {
+                                        var name = document.getElementById("prid").value;
+                                        let pos = titles.indexOf(name);
+
+                                        document.getElementById("price").innerHTML = prices[pos];
+
+                                        var message;
+                                        message = document.getElementById("p1");
+                                        message.innerHTML = "";
+                                        try {
+                                            if (name == "") throw "Empty";
+                                            if (isNaN(name) == false) throw "Please write the product's name!";
+                                        }
+                                        catch (err) {
+                                            message.innerHTML = err;
+                                        }
+                                    }
+
+                                </script>
+
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                <label>Price: </label><br />
+                                <p id="price"> </p>
+
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <label class="f">Contact</label><br />
+                                <input class="g required" type="text" name="contact" placeholder="Your name" />
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                <label>Gender </label><br />
+                                <input type="radio" name="type" value="1" checked>Male<br />
+                                <input type="radio" name="type" value="2">Female<br />
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <label class="f">Mobile</label><br />
+                                <input class="g required" type="tel" name="mobile" placeholder="Phone number" value="+"
+                                    id="mobnm" onblur="f2()" />
+                                <p id="p2"></p>
+                                <script>
+                                    function f2() {
+                                        var number = document.getElementById("mobnm").value;
+
+                                        var message;
+                                        message = document.getElementById("p2");
+                                        message.innerHTML = "";
+                                        try {
+                                            if (number == "") throw "Empty";
+
+                                            if (isNaN(number)) throw "Please write a number";
+                                        }
+                                        catch (err) {
+                                            message.innerHTML = err;
+                                        }
+                                    }
+
+                                </script>
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                <label>Number</label><br />
+                                <input type="radio" name="type" value="1" checked>Mobile<br />
+                                <input type="radio" name="type" value="2">Fax<br />
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <label class="f">Address</label><br />
+                                <input type="text" class="g required type=" name="address" placeholder="Your address"
+                                    id="addr" onblur="f3()" />
+                                <p id="p3"></p>
+                                <script>
+                                    function f3() {
+                                        var addr = document.getElementById("addr").value;
+
+                                        var message;
+                                        message = document.getElementById("p3");
+                                        message.innerHTML = "";
+                                        try {
+                                            if (addr == "") throw "Empty";
+
+                                            if (isNaN(addr) == false) throw "Please write your Address!";
+                                        }
+                                        catch (err) {
+                                            message.innerHTML = err;
+                                        }
+                                    }
+
+                                </script>
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                <label>Address:</label><br />
+                                <input type="radio" name="type" value="1" checked>Number<br />
+                                <input type="radio" name="type" value="2">Neighborhood<br />
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <label class="f">Country</label><br />
+                                <input class="g required" type="text" name="country" list="country"
+                                    placeholder="Albania" />
+                                <datalist id="country">
+                                    <option>A</option>
+                                    <option>Albania</option>
+                                    <option>Afghanistan</option>
+                                    <option>Algeria</option>
+                                    <option>Andorra</option>
+                                    <option>Angola</option>
+                                    <option>Antigua and Barbuda</option>
+                                    <option>Argentina</option>
+                                    <option>Armenia</option>
+                                    <option>Australia</option>
+                                    <option>Austria</option>
+                                    <option>Azerbaijan</option>
+                                    <option>B</option>
+                                    <option>Bahrain</option>
+                                    <option>Bangladesh</option>
+                                    <option>Barbados</option>
+                                    <option>Belarus</option>
+                                    <option>Belgium</option>
+                                    <option>Belize</option>
+                                    <option>Benin</option>
+                                    <option>Bhutan</option>
+                                    <option>Bolivia</option>
+                                    <option>Bosnia and Herzegovina</option>
+                                    <option>Botswana</option>
+                                    <option>Brazil</option>
+                                    <option>Brunei</option>
+                                    <option>Bulgaria</option>
+                                    <option>Burkina Faso</option>
+                                    <option>Burundi</option>
+                                    <option>C</option>
+                                    <option>Cabo Verde</option>
+                                    <option>Cambodia</option>
+                                    <option>Cameroon</option>
+                                    <option>Canada</option>
+                                    <option>Central African Republic</option>
+                                    <option>Chile</option>
+                                    <option>Chad</option>
+                                    <option>D</option>
+                                    <option>Denmark</option>
+                                    <option>Djibouti</option>
+                                    <option>Dominica</option>
+                                    <option>Dominican Republic</option>
+                                    <option>E</option>
+                                    <option>East Timor (Timor-Leste)</option>
+                                    <option>Ecuador</option>
+                                    <option>Egypt</option>
+                                    <option>El Salvador</option>
+                                    <option>Equatorial Guinea</option>
+                                    <option>Eritrea</option>
+                                    <option>Estonia</option>
+                                    <option>F</option>
+                                    <option>Fiji</option>
+                                    <option>Finland</option>
+                                    <option>France</option>
+                                    <option>G</option>
+                                    <option>Gabon</option>
+                                    <option>The Gambia</option>
+                                    <option>Georgia</option>
+                                    <option>Germany</option>
+                                    <option>Ghana</option>
+                                    <option>Greece</option>
+                                    <option>Grenada</option>
+                                    <option>Guatemala</option>
+                                    <option>H</option>
+                                    <option>Haiti</option>
+                                    <option>Honduras</option>
+                                    <option>Hungary</option>
+                                    <option>I</option>
+                                    <option>Iceland</option>
+                                    <option>India</option>
+                                    <option>Indonesia</option>
+                                    <option>Iran</option>
+                                    <option>Iraq</option>
+                                    <option>Irelan</option>
+                                    <option>J</option>
+                                    <option>Jamaica</option>
+                                    <option>Japan</option>
+                                    <option>Jordan</option>
+                                    <option>K</option>
+                                    <option>Kazakhstan</option>
+                                    <option>Kenya</option>
+                                    <option>Kiribati</option>
+                                    <option>Korea, North</option>
+                                    <option>Korea, South</option>
+                                    <option>Kosovo</option>
+                                    <option>Kuwait</option>
+                                    <option>L</option>
+                                    <option>Laos</option>
+                                    <option>Latvia</option>
+                                    <option>Lebanon</option>
+                                    <option>Lesotho</option>
+                                    <option>Liberia</option>
+                                    <option>Libya</option>
+                                    <option>M</option>
+                                    <option>Madagascar</option>
+                                    <option>Malawi</option>
+                                    <option>Malaysia</option>
+                                    <option>Maldives</option>
+                                    <option>Mali</option>
+                                    <option>Malta</option>
+                                    <option>Marshall Islands</option>
+                                    <option>N</option>
+                                    <option>Namibia</option>
+                                    <option>Nauru</option>
+                                    <option>Nepal</option>
+                                    <option>Netherlands</option>
+                                    <option>New Zealand</option>
+                                    <option>Nicaragua</option>
+                                    <option>P</option>
+                                    <option>Pakistan</option>
+                                    <option>Palau</option>
+                                    <option>Panama</option>
+                                    <option>Papua New Guinea</option>
+                                    <option>Paraguay</option>
+                                    <option>Peru</option>
+                                    <option>Q</option>
+                                    <option>Qatar</option>
+                                    <option>R</option>
+                                    <option>Romania</option>
+                                    <option>Russia</option>
+                                    <option>Rwanda</option>
+                                    <option>S</option>
+                                    <option>Saint Kitts and Nevis</option>
+                                    <option>Saint Lucia</option>
+                                    <option>Saint Vincent and the Grenadines</option>
+                                    <option>Samoa</option>
+                                    <option>San Marino</option>
+                                    <option>Sao Tome and Principe</option>
+                                    <option>Saudi Arabia</option>
+                                    <option>Senegal</option>
+                                    <option>T</option>
+                                    <option>Taiwan</option>
+                                    <option>Tajikistan</option>
+                                    <option>Tanzania</option>
+                                    <option>Thailand</option>
+                                    <option>Togo</option>
+                                    <option>U</option>
+                                    <option>Uganda</option>
+                                    <option>Ukraine</option>
+                                    <option>United Arab Emirates</option>
+                                    <option>United Kingdom</option>
+                                    <option>V</option>
+                                    <option>Vanuatu</option>
+                                    <option>Vatican City</option>
+                                    <option>Venezuela</option>
+                                    <option>Vietnam</option>
+                                    <option>Y</option>
+                                    <option>Yemen</option>
+                                    <option>Z</option>
+                                    <option>Zambia</option>
+                                    <option>Zimbabwe</option>
+                                </datalist>
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                <label>Verification</label><br />
+                                <input type="radio" name="type" value="2">You<br />
+                                <input type="radio" name="type" value="2">Other<br />
+                            </p>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <p>
+                                <label class="f">City</label><br />
+                                <input class="g required" type="text" name="city" placeholder="Your city" id="city"
+                                    onblur="f5()" />
+                                <p id="p5"></p>
+                                <script>
+                                    function f5() {
+                                        var city = document.getElementById("city").value;
+
+                                        var message;
+                                        message = document.getElementById("p5");
+                                        message.innerHTML = "";
+                                        try {
+                                            if (city == "") throw "Empty";
+
+                                            if (isNaN(city) == false) throw "Please write your City's name!";
+                                        }
+                                        catch (err) {
+                                            message.innerHTML = err;
+                                        }
+                                    }
+
+                                </script>
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                <label>Information</label><br />
+                                <input type="radio" name="type" value="1" checked>Center<br />
+                                <input type="radio" name="type" value="2">Suburb<br />
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <label class="f">Zip</label><br />
+                                <input class="g required" type="text" name="zip" placeholder="Zip code" maxlength="5"
+                                    minlength="5" />
+                            </p>
+                        </td>
+                        <td>
+                            <div class="confirmi">
+                                <input type="submit" class="btn" value="Confirm" id="conf">
+                                <input type="reset" value="Clear Form" class="btn" style="margin-top: 20px;"
+                                    onclick="clickCounter()">
+                                <div id="result"></div>
+                            </div>
+
+                        </td>
+
+
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+
+    </section>
