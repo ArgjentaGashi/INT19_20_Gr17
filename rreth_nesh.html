@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html manifest="home.appcache">
 
 <head en="lang">
     <meta charset="utf-8">
@@ -46,11 +46,7 @@
 
 <body class="fadeBody">
 
-    <style>
-        .fadeBody {
-            display: none;
-        }
-    </style>
+
     <header>
 
         <h1>Your Home</h1>
@@ -58,11 +54,18 @@
         <nav>
             <div id="smedialinks">
                 <ul>
-                    <li><a href="https://www.linkedin.com/"><img src="images/linkedin.png"></a></li>
-                    <li><a href="https://www.twitter.com/"><img src="images/twitter.png"></a></li>
-                    <li><a href="https://www.pinterest.com/"><img src="images/pinterest.png"></a></li>
-                    <li><a href="https://plus.google.com/"><img src="images/googleplus.png"></a></li>
-                    <li><a href="https://www.facebook.com/"><img src="images/facebook.png"></a></li>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/"><abbr title="Linkedin"><img src="images/linkedin.png"
+                                        alt="Link."></abbr></a></li>
+                        <li><a href="https://www.twitter.com/"><abbr title="Twitter"><img src="images/twitter.png"
+                                        alt="Tweet"></abbr></a></li>
+                        <li><a href="https://www.pinterest.com/"><abbr title="Pinterest"><img src="images/pinterest.png"
+                                        alt="Pint"></abbr></a></li>
+                        <li><a href="https://plus.google.com/"><abbr title="+Google"><img src="images/googleplus.png"
+                                        alt="+"></abbr></a></li>
+                        <li><a href="https://www.facebook.com/"><abbr title="Facebook"><img src="images/facebook.png"
+                                        alt="Fb"></abbr></a></li>
+                    </ul>
                 </ul>
             </div>
 
@@ -208,7 +211,7 @@
                 Email: yourhome@gmail.com
             </address>
             <address>
-                Address:Zhul Selmani <br />
+                Address:Zhuj Selmani <br />
                 City: Peja <br />
                 Region: Peja <br />
                 Country: Kosovo <br />
@@ -286,31 +289,11 @@
 
                     </ol></br>
 
-                    <div id="supported"></div>  
-						<div id="unsupported"></div>  
-						<button onclick="worker();" id="btn3">Subscribe</button>  
-						<script type="text/javascript">  
-							function worker()   
-							{  
-								if(typeof(Worker)!=="undefined"){  
-									document.getElementById("supported").innerHTML="You subscribed the browser..";   
-								}
-								else
-								{
-									document.getElementById("unsupported").innerHTML="Not supporting";}
-								}
-							</script>
-							<style>
-								#btn3
-								{
-									border-radius: 5px;
-									background-color: F1F1F1;
-									font-family: Alegreya Sans SC;
-									float: top;
-								}
-							</style>
-							<button id="btn1">Add Products</button>
-							<button id="btn2">Add in the beggining</button>
+                    <div id="supported"></div>
+                    <div id="unsupported"></div>
+                    <button onclick="worker();" id="btn3">Subscribe</button>
+                    <button id="btn1">Add Products</button>
+                    <button id="btn2">Add in the beggining</button>
 
                 </div>
 
@@ -337,7 +320,7 @@
 
                 <div id="d">
                     <h5>CONTACT US</h5>
-                    <form method="get" action="">
+                    <form method="POST" action="" onsubmit="return checkForm(this);">
                         <input type="text" name="name" placeholder="Name" class="f" /><br /><br />
                         <input type="text" name="email" placeholder="Email" class="f" /><br /><br />
                         <input type="type" name="subject" placeholder="Subject" class="f" /><br /><br />
@@ -348,14 +331,22 @@
                 </div>
             </div>
             <div>
-                <p id="copyright">Copyright &copy; 2017 Fundamentals of Web Development</p>
+                <address>
+                    <p id="copyright">Copyright &copy; 2017 Fundamentals of Web Development
+
+                        .........email: <a href="mailto:yourhome@gmail.com ">yourhome@gmail.com</a><br />
+                    </p>
+                </address>
             </div>
 
         </section>
+        
     </footer>
-    </main>
-    <script src="javascript/getPosition.js"></script>
-    <script src="javascript/jquerythingz.js"></script>
+</main>
+<script src="javascript/allpages.js"></script>
+<script src="javascript/jquerythingz.js"></script>
+<script src="javascript/getPosition.js"></script>
+
 </body>
 
 </html>

@@ -11,22 +11,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="javascript/jquery-3.4.1.min.js"></script>
-    <script src="jquery-1.11.2.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
+</head>
+<style>
+    #div1,
+    #div5,
+    #div9 {
+        -ms-transform: skew(7deg);
+        /* IE 9 */
+        -webkit-transform: skew(7deg);
+        /* Safari prior 9.0 */
+        transform: skew(7deg);
+        /* Standard syntax */
+    }
 
-        $(document).ready(function () {
-            $("#btn1").click(function () {
-                $("ol").append("<li><a href=\"interieri/dhoma_punes_produktet/dhp_produkti1.html\">Araceli</a></li>",
-                    "<li><a href=\"interieri/dhoma_dites_produktet/dhd_produkti2.html\">Valebeck</a></li");
-            });
-
-            $("#btn2").click(function () {
-                $("ol").prepend("<li><a href=\"interieri/dhoma_gjumit_produktet/dhgj_produkti2.html\">Mattress</a></li>",
-                    "<li><a href=\"interieri/kuzhina_produktet/produkti1.html\">Kitchen Reno</a></li");
-            });
-        });
-    </script>
+    #div4,
+    #div8 {
+        -ms-transform: skew(7deg);
+        /* IE 9 */
+        -webkit-transform: skew(7deg);
+        /* Safari prior 9.0 */
+        transform: skew(7deg);
+        /* Standard syntax */
+    }
+</style>
 </head>
 
 
@@ -38,11 +45,16 @@
         <nav>
             <div id="smedialinks">
                 <ul>
-                    <li><a href="https://www.linkedin.com/"><img src="images/linkedin.png"></a></li>
-                    <li><a href="https://www.twitter.com/"><img src="images/twitter.png"></a></li>
-                    <li><a href="https://www.pinterest.com/"><img src="images/pinterest.png"></a></li>
-                    <li><a href="https://plus.google.com/"><img src="images/googleplus.png"></a></li>
-                    <li><a href="https://www.facebook.com/"><img src="images/facebook.png"></a></li>
+                    <li><a href="https://www.linkedin.com/"><abbr title="Linkedin"><img
+                                    src="images/linkedin.png"></abbr></a></li>
+                    <li><a href="https://www.twitter.com/"><abbr title="Twitter"><img
+                                    src="images/twitter.png"></abbr></a></li>
+                    <li><a href="https://www.pinterest.com/"><abbr title="Pinterest"><img
+                                    src="images/pinterest.png"></abbr></a></li>
+                    <li><a href="https://plus.google.com/"><abbr title="+Google"><img
+                                    src="images/googleplus.png"></abbr></a></li>
+                    <li><a href="https://www.facebook.com/"><abbr title="Facebook"><img
+                                    src="images/facebook.png"></abbr></a></li>
                 </ul>
             </div>
 
@@ -75,31 +87,39 @@
 
     </header>
     <article class="parent">
-        <img id="div2" src="images/imgtat/tip4.png" class="hoveer" width="550px" height="550px" >
-        <p id="div1"> Stark, cold and boring? Simple, sleek and sexy? Regardless of how you view minimalist interior design, 
+        <img id="div2" src="images/imgtat/tip4.png" class="hoveer" width="500px" height="500px">
+        <p id="div1"> Stark, cold and boring? Simple, sleek and sexy? Regardless of how you view minimalist interior
+            design,
             there’s more to this widely embraced concept than most of us think.
-            Delving into the theory of “less is more,” we need to rethink minimalism as not just a plain white box or cool ultramodern space, 
-            but as a concept that simultaneously showcases exceptional functional design while artistically creating a simplified way to live. 
+            Delving into the theory of “less is more,” we need to rethink minimalism as not just a plain white box or
+            cool ultramodern space,
+            but as a concept that simultaneously showcases exceptional functional design while artistically creating a
+            simplified way to live.
         </p>
-        <img id="div3" src="images/imgtat/tip41.png" width="550px" height="550px" class="hoveer">
-        <p id="div4">Minimalist design started in the 20th century as a reaction to traditional and overly wrought classical details.
-             In a nutshell, it’s design that’s stripped down to its essential purpose and identity by eliminating everything unnecessary.
-             This pared-down aesthetic exemplifies simplicity at its best. </p>
-            <img id="div6" src="images/imgtat/tip42.png" width="550px" height="550px" class="hoveer">
-            <p id="div5">One of the first to embrace minimalism is Mies van der Rohe. In fact, the term “less is more” 
-                came from the German architect and educator, who used glass, steel and wide-open spaces to create his unembellished modern visions.
-                 His use of crisp lines and well-placed rectangle shapes created a sense of order.</p>
-            <img id="div7" src="images/imgtat/43.png" width="550px" height="550px" class="hoveer">
-            <p id="div8">Eliminating clutter and extraneous objects is also a hallmark of minimalist interior design. 
-                This simplicity allows the focus to remain on the room’s purpose and function,
-                 and on the beauty of its carefully selected furnishings.</p>
-            <img id="div10" src="images/imgtat/44.png" width="550px" height="550px" class="hoveer">
-            <p id="div9">Similarly, keeping color combinations to a minimum further enhances the serene and balanced environment. 
-                This doesn’t necessarily translate to keeping everything black and white. Pops of color,
-                 monochromatic hues of any color, and layers of textures such as wood and wool work well in any minimalist space.</p>
+        <img id="div3" src="images/imgtat/tip41.png" width="500px" height="500px" class="hoveer">
+        <p id="div4">Minimalist design started in the 20th century as a reaction to traditional and overly wrought
+            classical details.
+            In a nutshell, it’s design that’s stripped down to its essential purpose and identity by eliminating
+            everything unnecessary.
+            This pared-down aesthetic exemplifies simplicity at its best. </p>
+        <img id="div6" src="images/imgtat/tip42.png" width="500px" height="500px" class="hoveer">
+        <p id="div5">One of the first to embrace minimalism is Mies van der Rohe. In fact, the term “less is more”
+            came from the German architect and educator, who used glass, steel and wide-open spaces to create his
+            unembellished modern visions.
+            His use of crisp lines and well-placed rectangle shapes created a sense of order.</p>
+        <img id="div7" src="images/imgtat/43.png" width="500px" height="500px" class="hoveer">
+        <p id="div8">Eliminating clutter and extraneous objects is also a hallmark of minimalist interior design.
+            This simplicity allows the focus to remain on the room’s purpose and function,
+            and on the beauty of its carefully selected furnishings.</p>
+        <img id="div10" src="images/imgtat/44.png" width="500px" height="500px" class="hoveer">
+        <p id="div9">Similarly, keeping color combinations to a minimum further enhances the serene and balanced
+            environment.
+            This doesn’t necessarily translate to keeping everything black and white. Pops of color,
+            monochromatic hues of any color, and layers of textures such as wood and wool work well in any minimalist
+            space.
+        </p>
     </article>
     <footer>
-
         <section class="foot">
             <div class="A">
 
@@ -134,6 +154,9 @@
 
                     </ol></br>
 
+                    <div id="supported"></div>
+                    <div id="unsupported"></div>
+                    <button onclick="worker();" id="btn3">Subscribe</button>
                     <button id="btn1">Add Products</button>
                     <button id="btn2">Add in the beggining</button>
 
@@ -162,7 +185,7 @@
 
                 <div id="d">
                     <h5>CONTACT US</h5>
-                    <form method="get" action="">
+                    <form method="POST" action="" onsubmit="return checkForm(this);">
                         <input type="text" name="name" placeholder="Name" class="f" /><br /><br />
                         <input type="text" name="email" placeholder="Email" class="f" /><br /><br />
                         <input type="type" name="subject" placeholder="Subject" class="f" /><br /><br />
@@ -173,17 +196,20 @@
                 </div>
             </div>
             <div>
-                <p id="copyright">Copyright &copy; 2017 Fundamentals of Web Development</p>
+                <address>
+
+                    <p id="copyright">Copyright &copy; 2017 Fundamentals of Web Development
+
+                        .........email: <a href="mailto:yourhome@gmail.com ">yourhome@gmail.com</a><br />
+                    </p>
+                    </addrress>
             </div>
 
         </section>
     </footer>
     </main>
-    <script src="javascript/carousel.js"></script>
+    <script src="javascript/allpages.js"></script>
     <script src="javascript/jquerythingz.js"></script>
-    <script src="javascript/confirm.js"></script>
-    <script src="javascript\jqueryfocusblur.js"></script>
-
 </body>
 
 </html>

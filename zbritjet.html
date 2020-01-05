@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="lib/reset.css">
     <link rel="stylesheet" href="lib/animate.css">
     <link rel="stylesheet" href="lib/stilizimi.css">
+    <script src="javascript/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="javascript/jquery-3.4.1.min.js"></script>
     <style>
@@ -18,7 +20,7 @@
         }
 
         svg {
-            margin: 3%;
+            margin: 3% 0;
         }
 
         #kanvasi {
@@ -33,7 +35,9 @@
             margin: 2% 20%;
             font-size: x-large;
         }
+
     </style>
+
 </head>
 
 
@@ -45,12 +49,18 @@
         <nav>
             <div id="smedialinks">
                 <ul>
-                    <li><a href="https://www.linkedin.com/"><img src="images/linkedin.png"></a></li>
-                    <li><a href="https://www.twitter.com/"><img src="images/twitter.png"></a></li>
-                    <li><a href="https://www.pinterest.com/"><img src="images/pinterest.png"></a></li>
-                    <li><a href="https://plus.google.com/"><img src="images/googleplus.png"></a></li>
-                    <li><a href="https://www.facebook.com/"><img src="images/facebook.png"></a></li>
-                </ul>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/"><abbr title="Linkedin"><img src="images/linkedin.png"
+                                        alt="Link."></abbr></a></li>
+                        <li><a href="https://www.twitter.com/"><abbr title="Twitter"><img src="images/twitter.png"
+                                        alt="Tweet"></abbr></a></li>
+                        <li><a href="https://www.pinterest.com/"><abbr title="Pinterest"><img src="images/pinterest.png"
+                                        alt="Pint"></abbr></a></li>
+                        <li><a href="https://plus.google.com/"><abbr title="+Google"><img src="images/googleplus.png"
+                                        alt="+"></abbr></a></li>
+                        <li><a href="https://www.facebook.com/"><abbr title="Facebook"><img src="images/facebook.png"
+                                        alt="Fb"></abbr></a></li>
+                    </ul>
             </div>
 
             <div id="search">
@@ -83,7 +93,7 @@
 
     <main>
 
-        <canvas id="MovingCanvas" width="1262" height="150">
+        <canvas id="MovingCanvas" width="1263" height="150">
         </canvas>
 
         <div>
@@ -127,7 +137,7 @@
 
         </div>
         <div>
-            <canvas id="kanvasi" width="1260" height="750">
+            <canvas id="kanvasi" width="1263" height="750">
             </canvas>
         </div>
         <script>
@@ -147,7 +157,7 @@
                 canv.fillStyle = "white";
                 canv.font = "2em David Libre";
                 canv.textAlign = "center";
-                canv.fillText("Hello World", 600, 75);
+                canv.fillText("Sale", 600, 75);
 
                 var start = 0;
                 setInterval(function () {
@@ -230,30 +240,124 @@
 
             }
 
+            function myFunction() {
+                var str = "Wait! None of these products interest you? Well, we have just the thing for you. Start playing the game below and if you win you get 35% discount in <mark>ANY</mark> of the products that you like!";
+                var patt = new RegExp("discount");
+                var res = patt.exec(str);
+                document.getElementById("demo").innerHTML = res;
+            }
+            function testmethod() {
+                var variabla = "Wait! None of these products interest you? Well, we have just the thing for you. Start playing the game below and if you win you get 35% discount in <mark>ANY</mark> of the products that you like!";
+                var vari = new RegExp("35%");
+                var rez = vari.test(variabla);
+                document.getElementById("testi").innerHTML = rez;
+            }
+            function krk() {
+                var s = "Wait! None of these products interest you? Well, we have just the thing for you. Start playing the game below and if you win you get 35% discount,discount,discount in <mark>ANY</mark> of the products that you like!";
+                var patt1 = /discount/g;
+                var result = s.match(patt1);
+                document.getElementById("dem").innerHTML = result;
+            }
+            function kerkesa() {
+                var dis = "DISCOUNT";
+                var pa = /discount/i;
+                var result = dis.match(pa);
+                document.getElementById("njeid").innerHTML = result;
+            }
+
         </script>
 
 
-        <p id="zbrteksti">Wait! None of these products interest you? Well, we have just the thing for you. Drag the
-            below picture to the empty box,
-            so you can start playing a game. If you win you get 35% discount in <mark>ANY</mark> of the products
-            that you like!
+        <p id="zbrteksti">Wait! None of these products interest you? Well, we have just the thing for you. Start
+            playing the game below and if you win you get 25% discount in <mark>ANY</mark> of the products
+            that you like!<br /><br /><button style="border-radius: 3px;" onclick="myFunction()">Wait,You Said
+                Discount?</button>
+            <p style="margin-left:20%;font-weight: bolder; color:#752424;" id="demo"></p>
+
+            <button style=" margin-left:20%;border-radius: 3px;" onclick="testmethod()">25%?</button>
+            <p style="margin-left:20%;font-weight: bolder; color:#752424;" id="testi"></p>
+
+            <button style=" margin-left:20%;border-radius: 3px;" onclick="krk()">I can't believe!!!</button>
+            <p style=" margin-left:20%;font-weight: bolder; color:#752424;" id="dem"></p>
+
+            <button style=" margin-left:20%;border-radius: 3px;" onclick="kerkesa()">SCREAAAAM</button>
+            <p style="margin-left:20%;font-weight: bolder; color:#752424;" id="njeid"></p>
         </p>
 
 
-        <div class="empty">
+
+        <div id="gameCanvas">
+            <button id="stbtn" onclick="clickCounter()">Start Game! </button>
+            <canvas id="myCanvas" width="480" height="320"></canvas>
+        </div>
+        <style>
+            #myCanvas {
+                display: none;
+                background: #eee;
+            }
+
+            #stbtn {
+                margin: 2% 20%;
+                border: 2px #752424;
+                background-color: #752424;
+                padding: 5px;
+                font-size: 30px;
+                color: aliceblue;
+                border-radius: 10px;
+            }
+
+            #gameCanvas {
+
+                margin: 5% 30%;
+            }
+
+            #jBells {
+                margin: 3% 1%;
+            }
+        </style>
+
+        <p id="zbrteksti">Go to our online order page if you already know what you want!
+        </p>
+
+
+        <script>
+
+            function clickCounter() {
+                if (typeof (Storage) !== "undefined") {
+                    if (sessionStorage.clickcount) {
+                        sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+                    } else {
+                        sessionStorage.clickcount = 1;
+                    }
+                    if (sessionStorage.clickcount > 1) {
+                        alert("You can't play again!");
+                        $("#stbtn").click(function () {
+                            $("#myCanvas").remove();
+                        });
+                    }
+
+                } else {
+                    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+                }
+            }
+
+
+            function onlineorder() {
+                window.location.href = "porosit_online.html";
+            }
+        </script>
+
+        <div class="empty" ondrop="onlineorder();">
             <div class="fill" draggable="true"> </div>
-          </div>
-        
-          <div class="empty">
-          </div>
+        </div>
+
+        <div class="empty" ondrop="onlineorder();">
+        </div>
 
 
+        <div id="jBells">
 
-
-
-        <div>
-
-            <audio controls autoplay>
+            <audio autoplay>
                 <source src="audio/jingleBells.mp3" type="audio/mpeg">
                 <source src="audio/jingleBellsogg.ogg" type="audio/ogg">
                 This text displays if the audio tag isn't supported.
@@ -263,7 +367,7 @@
     </main>
 
 
-
+    </section>
     <footer>
         <section class="foot">
             <div class="A">
@@ -299,6 +403,9 @@
 
                     </ol></br>
 
+                    <div id="supported"></div>
+                    <div id="unsupported"></div>
+                    <button onclick="worker();" id="btn3">Subscribe</button>
                     <button id="btn1">Add Products</button>
                     <button id="btn2">Add in the beggining</button>
 
@@ -327,7 +434,7 @@
 
                 <div id="d">
                     <h5>CONTACT US</h5>
-                    <form method="get" action="">
+                    <form method="POST" action="" onsubmit="return checkForm(this);">
                         <input type="text" name="name" placeholder="Name" class="f" /><br /><br />
                         <input type="text" name="email" placeholder="Email" class="f" /><br /><br />
                         <input type="type" name="subject" placeholder="Subject" class="f" /><br /><br />
@@ -338,13 +445,22 @@
                 </div>
             </div>
             <div>
-                <p id="copyright">Copyright &copy; 2017 Fundamentals of Web Development</p>
+                <address>
+                    <p id="copyright">Copyright &copy; 2017 Fundamentals of Web Development
+
+                        .........email: <a href="mailto:yourhome@gmail.com ">yourhome@gmail.com</a><br />
+                    </p>
+                </address>
             </div>
 
         </section>
+
     </footer>
     </main>
-    <script src="javascript\dragndrop.js"></script>
+    <script src="javascript/allpages.js"></script>
+    <script src="javascript/jquerythingz.js"></script>
+    <script src="javascript/dragndrop.js"></script>
+    <script src="javascript/loja.js"></script>
 </body>
 
 </html>

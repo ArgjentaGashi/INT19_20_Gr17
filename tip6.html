@@ -5,12 +5,44 @@
     <meta charset="utf-8">
     <title>Your Home</title>
     <link href='https://fonts.googleapis.com/css?family=David Libre' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Allan' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="lib/reset.css">
-    <link rel="stylesheet" href="lib/animate.css">
-    <link rel="stylesheet" href="E:\FIEK\Viti II\HTML\Projekti\projekti_internet_grupi17 (4)\projekti_internet_grupi17\lib/stilizimi.css">
+	<link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="lib/reset.css">
+	<link rel="stylesheet" href="lib/stilizimi.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="javascript/jquery-3.4.1.min.js"></script>
 </head>
+
+<style>
+    .tip5 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        padding:40px;
+        padding-top: 5%;
+        
+        }
+        #div2, #div9,#div11,#div4,#div13
+        {
+            margin:15% 5%;
+        } 
+        
+        
+        #div2 { grid-area: 3 / 2 / 5 / 3; }
+        #div3 { grid-area: 5 / 2 / 7 / 3; }
+        #div4 { grid-area: 7 / 2 / 9 / 3; }
+        #div5 { grid-area: 9 / 2 / 11 / 3; }
+        #div7 { grid-area: 1 / 2 / 3 / 3; }
+        #div9 { grid-area: 1 / 1 / 3 / 2; }
+        #div10 { grid-area: 3 / 1 / 5 / 2; }
+        #div11 { grid-area: 5 / 1 / 7 / 2; }
+        #div12 { grid-area: 7 / 1 / 9 / 2; }
+        #div13 { grid-area: 9 / 1 / 11 / 2; }
+    
+    </style>
+
 
 <body>
     <header class="animated fadeIn">
@@ -123,6 +155,9 @@
 
 						</ol></br>
 
+                        <div id="supported"></div>
+						<div id="unsupported"></div>
+						<button onclick="worker();" id="btn3">Subscribe</button>
 						<button id="btn1">Add Products</button>
 						<button id="btn2">Add in the beggining</button>
 						
@@ -150,7 +185,7 @@
 
 					<div id="d">
 						<h5>CONTACT US</h5>
-						<form method="get" action="">
+						<form method="POST" action="" onsubmit="return checkForm(this);">
 							<input type="text" name="name" placeholder="Name" class="f" /><br /><br />
 							<input type="text" name="email" placeholder="Email" class="f"/><br /><br />
 							<input type="type" name="subject" placeholder="Subject" class="f"/><br /><br />
@@ -161,6 +196,7 @@
 				</div>
 				<div>
 					<address>
+                        
 					 <p id="copyright">Copyright &copy; 2017 Fundamentals of Web Development
 					
                      .........email: <a href="mailto:yourhome@gmail.com ">yourhome@gmail.com</a><br/>
@@ -171,7 +207,8 @@
 			</section>
 		</footer>
         </main>
-        
+        <script src="javascript/allpages.js"></script>
+	<script src="javascript/jquerythingz.js"></script>
     </body>
 
 </html>

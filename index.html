@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html manifest="home.appcache">
 
 <head en="lang">
 	<meta charset="utf-8">
@@ -11,24 +11,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="javascript/jquery-3.4.1.min.js"></script>
-        <script src="jquery-1.11.2.min.js"></script>
-	    <link rel="stylesheet" href="lib/stilizimi.css">
-    <script src="jquery-1.11.2.min.js"></script>
-	<script>
-		$(document).ready(function () {
-			$("#btn1").click(function () {
-				$("ol").append("<li><a href=\"interieri/dhoma_punes_produktet/dhp_produkti1.html\">Araceli</a></li>",
-					"<li><a href=\"interieri/dhoma_dites_produktet/dhd_produkti2.html\">Valebeck</a></li");
-			});
 
-			$("#btn2").click(function () {
-				$("ol").prepend("<li><a href=\"interieri/dhoma_gjumit_produktet/dhgj_produkti2.html\">Mattress</a></li>",
-					"<li><a href=\"interieri/kuzhina_produktet/produkti1.html\">Kitchen Reno</a></li");
-			});
-		});
-
-
-	</script>
 </head>
 
 <body class="fadeBody">
@@ -37,21 +20,27 @@
 		.fadeBody {
 			display: none;
 		}
+
 	</style>
 
 	<div id="dialogoverlay"></div>
 
 	<header>
-		<h1>Your Home</h1>
+		<h1><a name="top"></a>Your Home</h1>
 		<h3>Where dreams come true</h3>
 		<nav>
 			<div id="smedialinks">
 				<ul>
-					<li><a href="https://www.linkedin.com/"><abbr title="Linkedin"><img src="images/linkedin.png" alt="Link."></abbr></a></li>
-                    <li><a href="https://www.twitter.com/"><abbr title="Twitter"><img src="images/twitter.png" alt="Tweet"></abbr></a></li>
-                    <li><a href="https://www.pinterest.com/"><abbr title="Pinterest"><img src="images/pinterest.png" alt="Pint"></abbr></a></li>
-                    <li><a href="https://plus.google.com/"><abbr title="+Google"><img src="images/googleplus.png" alt="+"></abbr></a></li>
-                    <li><a href="https://www.facebook.com/"><abbr title="Facebook"><img src="images/facebook.png" alt="Fb"></abbr></a></li>
+					<li><a href="https://www.linkedin.com/"><abbr title="Linkedin"><img src="images/linkedin.png"
+									alt="Link."></abbr></a></li>
+					<li><a href="https://www.twitter.com/"><abbr title="Twitter"><img src="images/twitter.png"
+									alt="Tweet"></abbr></a></li>
+					<li><a href="https://www.pinterest.com/"><abbr title="Pinterest"><img src="images/pinterest.png"
+									alt="Pint"></abbr></a></li>
+					<li><a href="https://plus.google.com/"><abbr title="+Google"><img src="images/googleplus.png"
+									alt="+"></abbr></a></li>
+					<li><a href="https://www.facebook.com/"><abbr title="Facebook"><img src="images/facebook.png"
+									alt="Fb"></abbr></a></li>
 				</ul>
 			</div>
 
@@ -100,7 +89,7 @@
 				<div class="artikujt">
 
 					<div class="artikulli">
-						<img id="mainfig"  src="images/imgtat/id2.jpg" style="width: 390px; height: 216px">
+						<img id="mainfig" src="images/imgtat/id2.jpg" style="width: 390px; height: 216px">
 						<h2>How to decorate for Christmas</h2>
 						Wondering how to decorate for <br>
 						Christmas? We're here to help <br>
@@ -185,7 +174,7 @@
 			<div class="meetTeam">
 				<h2 class="maintitle"> Meet The Team</h2>
 				<p class="src1"><img class="fig1" src="images/imgau/ensarja2.jpeg"
-						style="width: 110px; height: 110px;" /> <span class="span">Ensare Islami</span></p>
+						style="width: 110px; height: 110px;" /> Ensare Islami</p>
 				<p id="pershkrimi"> Ensare is our great leader that we all love and respect.
 					She writes the cleanest code you'll ever see and even though we differ in our religious views
 					we still have a lot of fun together. Also, DO NOT call her 'CALE'! <br>
@@ -193,7 +182,7 @@
 
 				<br />
 
-				<p class="src1"><img class="fig1" src="images/imgau/arita2.jpg" /><span class="span">Arita Alidemaj</span></p>
+				<p class="src1"><img class="fig1" src="images/imgau/arita2.jpg" /> Arita Alidemaj</p>
 				<p id="pershkrimi">Arita is a young, hardworking woman, who we like to call 'Vogelushe' due to her
 					babyface and height. However, she is three times squared the ordinary human and works more than
 					you'd think possible. <br>
@@ -202,7 +191,7 @@
 
 				<br />
 
-				<p class="src1"><img class="fig1" src="images/imgau/argjenta2.jpg"  /> <span class="span">Argjenta Gashi</span></p>
+				<p class="src1"><img class="fig1" src="images/imgau/argjenta2.jpg" /> Argjenta Gashi</p>
 				<p id="pershkrimi">Argjenta is the joy of our team. Whenever we feel down or bad she is there with her
 					infectious laughter, and you'll feel better just by hearing her laugh! She keeps the group updated
 					and doesn't let us worry for the stupid things that we love worrying about. <br>
@@ -213,7 +202,7 @@
 				<br />
 
 				<p class="src1"><img class="fig1" src="images/imgau/alina2.jpg" style="width: 110px; height: 110px; " />
-					<span class="span">Alina Fazliu</span></p>
+					Alina Fazliu</p>
 				<p id="pershkrimi">Alina is our mom manager. She keeps us all together,
 					however she just isn't the
 					brightest bulb in the box. She loves calling herself "Alineee, budalliceeee" whenever she doesn't
@@ -249,6 +238,18 @@
 			</figure>
 		</div>
 
+		<button id="gg"><a href="#top">Top</a></button>
+		<style>
+			#gg{
+				margin-left: 90%;
+				margin-bottom: 2%;
+				border-radius: 30px;
+				width: 80px;
+				height: 40px;          
+			}
+			</style>
+
+		
 		<footer>
 			<section class="foot">
 				<div class="A">
@@ -284,31 +285,11 @@
 
 						</ol></br>
 
-						<div id="supported"></div>  
-						<div id="unsupported"></div>  
-						<button onclick="worker();" id="btn3">Subscribe</button>  
-						<script type="text/javascript">  
-							function worker()   
-							{  
-								if(typeof(Worker)!=="undefined"){  
-									document.getElementById("supported").innerHTML="You subscribed the browser..";   
-								}
-								else
-								{
-									document.getElementById("unsupported").innerHTML="Not supporting";}
-								}
-							</script>
-							<style>
-								#btn3
-								{
-									border-radius: 5px;
-									background-color: F1F1F1;
-									font-family: Alegreya Sans SC;
-									float: top;
-								}
-							</style>
-							<button id="btn1">Add Products</button>
-							<button id="btn2">Add in the beggining</button>
+						<div id="supported"></div>
+						<div id="unsupported"></div>
+						<button onclick="worker();" id="btn3">Subscribe</button>
+						<button id="btn1">Add Products</button>
+						<button id="btn2">Add in the beggining</button>
 
 					</div>
 
@@ -335,7 +316,7 @@
 
 					<div id="d">
 						<h5>CONTACT US</h5>
-						<form method="get" action="">
+						<form method="POST" action="" onsubmit="return checkForm(this);">
 							<input type="text" name="name" placeholder="Name" class="f" /><br /><br />
 							<input type="text" name="email" placeholder="Email" class="f" /><br /><br />
 							<input type="type" name="subject" placeholder="Subject" class="f" /><br /><br />
@@ -347,20 +328,24 @@
 				</div>
 				<div>
 					<address>
-					<p id="copyright">Copyright &copy; 2017 Fundamentals of Web Development
-					
-                     .........email: <a href="mailto:yourhome@gmail.com ">yourhome@gmail.com</a><br/>
-                     </p>
-                     </addrress>
+						<p id="copyright">Copyright &copy; 2017 Fundamentals of Web Development
+
+							.........email: <a href="mailto:yourhome@gmail.com ">yourhome@gmail.com</a><br />
+							
+						</p>
+						
+					</address>
 					
 				</div>
 
 			</section>
+			
 		</footer>
 	</main>
 	<script src="javascript/carousel.js"></script>
-	<script src="javascript/jquerythingz.js"></script>
 	<script src="javascript/confirm.js"></script>
+	<script src="javascript/allpages.js"></script>
+	<script src="javascript/jquerythingz.js"></script>
 
 </body>
 
