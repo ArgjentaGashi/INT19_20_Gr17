@@ -30,26 +30,16 @@ window.addEventListener("load", function () {
             if (isBlank(requiredInputs[i])) {
                 e.preventDefault();
                 requiredInputs[i].classList.add("error");
-                $(".wrapper").hide();
+                
             }
             else {
                 makeClean(requiredInputs[i]);
-                e.preventDefault();
-                $(".wrapper").show(300);
-                $(".wrapper").dialog({
-                    width: 350,
-                    height: 555,
-                    show: {
-                        effect: "blind",
-                        duration: 1000
-                    },
-                    hide: {
-                        effect: "explode",
-                        duration: 1000
-                    }
-                });
             }
         }
+
+           
+          
+        
     });
 
     var requiredInputs = document.querySelectorAll(".require");
@@ -71,12 +61,7 @@ window.addEventListener("load", function () {
             }
             else {
                 makeClean(requiredInputs[i]);
-                var email = prompt("You have succesfully paid! Enter you email address for more information!", "someone@example.com");
-                if (email !== null) {
-                    alert("Check you email for notifications.");
-                    window.location.reload();
-
-                }
+               
             }
         }
     });
@@ -86,6 +71,9 @@ window.addEventListener("load", function () {
         $(".wrapper").dialog("close");
 
     });
+
+   
+
 
 
 });
