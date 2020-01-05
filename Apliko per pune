@@ -247,7 +247,13 @@ $(document).ready(function(){
             <nav>
                 <div id="smedialinks">
                     <ul>
-                        https://github.com/ArgjentaGashi/INT19_20_Gr17/blob/master/Apliko%20per%20pune
+                      
+                        <li><a href="https://www.linkedin.com/"><abbr title="Linkedin"><img src="images/linkedin.png"></abbr></a></li>
+                    <li><a href="https://www.twitter.com/"><abbr title="Twitter"><img src="images/twitter.png"></abbr></a></li>
+                    <li><a href="https://www.pinterest.com/"><abbr title="Pinterest"><img src="images/pinterest.png"></abbr></a></li>
+                    <li><a href="https://plus.google.com/"><abbr title="+Google"><img src="images/googleplus.png"></abbr></a></li>
+                    <li><a href="https://www.facebook.com/"><abbr title="Facebook"><img src="images/facebook.png"></abbr></a></li>
+                    
                     </ul>
                 </div>
 
